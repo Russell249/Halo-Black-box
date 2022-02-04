@@ -1,6 +1,6 @@
 ﻿using Sandbox;
 
-namespace VrExample
+namespace HBB
 {
 	public partial class BaseHand : AnimEntity
 	{

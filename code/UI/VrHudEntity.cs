@@ -1,7 +1,7 @@
 ﻿using Sandbox;
 using Sandbox.UI;
 
-namespace VrExample
+namespace HBB
 {
 	/// <summary>
 	/// This will project the example HUD onto your left wrist

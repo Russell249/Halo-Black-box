@@ -1,6 +1,6 @@
 ﻿using Sandbox;
 
-namespace VrExample
+namespace HBB
 {
 	public class RightHand : BaseHand
 	{

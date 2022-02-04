@@ -1,10 +1,10 @@
 ﻿using Sandbox;
 
-namespace VrExample
+namespace HBB
 {
-	public partial class VrGame : Game
+	public partial class HBBGame : Game
 	{
-		public VrGame()
+		public HBBGame()
 		{
 			if ( IsServer )
 			{
@@ -16,7 +16,7 @@ namespace VrExample
 		{
 			base.ClientJoined( client );
 
-			var player = new VrPlayer();
+			var player = new HBBPlayer();
 			client.Pawn = player;
 
 			player.Respawn();

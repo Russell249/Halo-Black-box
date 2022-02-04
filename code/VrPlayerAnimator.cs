@@ -1,7 +1,7 @@
 ﻿using Sandbox;
 using System;
 
-namespace VrExample
+namespace HBB
 {
 	public class VrPlayerAnimator : StandardPlayerAnimator
 	{

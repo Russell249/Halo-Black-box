@@ -1,8 +1,8 @@
 ﻿using Sandbox;
 
-namespace VrExample
+namespace HBB
 {
-	partial class VrPlayer : Player
+	partial class HBBPlayer : Player
 	{
 		[Net, Local] public LeftHand LeftHand { get; set; }
 		[Net, Local] public RightHand RightHand { get; set; }
@@ -26,7 +26,7 @@ namespace VrExample
 
 		public override void Respawn()
 		{
-			SetModel( "models/citizen/citizen.vmdl" );
+			SetModel( "models/spartan/haloreachspartans.vmdl" );
 
 			if ( Client.IsUsingVr )
 			{

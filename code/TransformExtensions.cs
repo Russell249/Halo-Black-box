@@ -1,4 +1,4 @@
-﻿namespace VrExample
+﻿namespace HBB
 {
 	public static class TransformExtensions
 	{

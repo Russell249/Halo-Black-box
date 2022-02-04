@@ -1,6 +1,6 @@
 ﻿using Sandbox;
 
-namespace VrExample
+namespace HBB
 {
 	[Library]
 	public class VrWalkController : BasePlayerController
