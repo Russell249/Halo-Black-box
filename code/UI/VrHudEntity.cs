@@ -18,7 +18,7 @@ namespace HBB
 		{
 			base.Tick();
 
-			if ( Local.Pawn is VrPlayer player )
+			if ( Local.Pawn is HBBPlayer player )
 			{
 				Transform = player.LeftHand.Transform;
 
