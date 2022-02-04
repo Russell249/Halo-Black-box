@@ -26,7 +26,7 @@ namespace HBB
 
 		public override void Respawn()
 		{
-			SetModel( "models/spartan/haloreachspartans.vmdl" );
+			SetModel( "models/spartans/haloreachspartans.vmdl" );
 
 			if ( Client.IsUsingVr )
 			{
