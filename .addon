@@ -1,8 +1,8 @@
 {
-  "Title": "Halo Black Box",
+  "Title": "Halo: Black Box",
   "Type": "game",
   "Org": "hbb",
-  "Ident": "halo-black-box",
+  "Ident": "blackbox",
   "Schema": 1,
   "HasAssets": true,
   "AssetsPath": "",
