@@ -2,7 +2,10 @@
 
 Layer0
 {
-	shader "complex.vfx"
+	shader "vr_complex.vfx"
+
+	//---- PBR ----
+	F_SPECULAR 1
 
 	//---- Ambient Occlusion ----
 	g_flAmbientOcclusionDirectDiffuse "0.000"
@@ -31,7 +34,7 @@ Layer0
 	TextureNormal "materials/spartans/spartan_chest/spartan_chest_jai_zbump.tga"
 
 	//---- Roughness ----
-	TextureRoughness "materials/default/default_rough.tga"
+	TextureRoughness "[0.553088 0.553088 0.553088 0.000000]"
 
 	//---- Texture Coordinates ----
 	g_nScaleTexCoordUByModelScaleAxis "0"

@@ -15,7 +15,7 @@
 						[
 							{
 								from = "bullet_burn_decal.vmat"
-								to = "materials/spartans/bullet_burn_decal.vmat"
+								to = "materials/decals/bullethole.vmat"
 							},
 							{
 								from = "spartan_armor.vmat"
@@ -36,6 +36,18 @@
 							{
 								from = "spartan_emile_knife_scratch_decal.vmat"
 								to = "materials/spartans/spartan_story/spartan_emile_knife_scratch_decal.vmat"
+							},
+							{
+								from = "spartan_fp_armor.vmat"
+								to = "materials/spartans/spartan_armor_aqua.vmat"
+							},
+							{
+								from = "spartan_helmet_adrianna.vmat"
+								to = "materials/spartans/spartan_helmets/spartan_helmet_adrianna.vmat"
+							},
+							{
+								from = "spartan_helmet_adrianna_visor.vmat"
+								to = "materials/spartans/spartan_helmets/spartan_helmet_adrianna_visor.vmat"
 							},
 						]
 						use_global_default = false
