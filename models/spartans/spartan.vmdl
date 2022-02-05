@@ -14,8 +14,28 @@
 						remaps = 
 						[
 							{
-								from = "black.vmat"
-								to = "materials/black_matte.vmat"
+								from = "bullet_burn_decal.vmat"
+								to = "materials/spartans/bullet_burn_decal.vmat"
+							},
+							{
+								from = "spartan_armor.vmat"
+								to = "materials/spartans/spartan_armor_aqua.vmat"
+							},
+							{
+								from = "spartan_carter_paintwear.vmat"
+								to = "materials/spartans/spartan_story/spartan_carter_paintwear.vmat"
+							},
+							{
+								from = "spartan_chest_jai.vmat"
+								to = "materials/spartans/spartan_chest/spartan_chest_jai.vmat"
+							},
+							{
+								from = "spartan_chest_joshua.vmat"
+								to = "materials/spartans/spartan_chest/spartan_chest_joshua_aqua.vmat"
+							},
+							{
+								from = "spartan_emile_knife_scratch_decal.vmat"
+								to = "materials/spartans/spartan_story/spartan_emile_knife_scratch_decal.vmat"
 							},
 						]
 						use_global_default = false
@@ -212,146 +232,6 @@
 						[
 							{
 								_class = "Folder"
-								name = "C_Assault"
-								children = 
-								[
-									{
-										_class = "Folder"
-										name = "C_Commando"
-										children = 
-										[
-											{
-												_class = "RenderMeshFile"
-												name = "Chest_Assault_Commando_Ammo_Pack"
-												filename = "models/spartans/chest_assault_commando_ammo_pack.smd"
-												import_translation = [ 0.0, 0.0, 0.0 ]
-												import_rotation = [ 0.0, 0.0, 0.0 ]
-												import_scale = 1.0
-												align_origin_x_type = "None"
-												align_origin_y_type = "None"
-												align_origin_z_type = "None"
-												parent_bone = ""
-												import_filter = 
-												{
-													exclude_by_default = false
-													exception_list = [  ]
-												}
-											},
-											{
-												_class = "RenderMeshFile"
-												name = "Chest_Assault_Commando_Gear_Pack_Chest"
-												filename = "models/spartans/chest_assault_commando_gear_pack_chest.smd"
-												import_translation = [ 0.0, 0.0, 0.0 ]
-												import_rotation = [ 0.0, 0.0, 0.0 ]
-												import_scale = 1.0
-												align_origin_x_type = "None"
-												align_origin_y_type = "None"
-												align_origin_z_type = "None"
-												parent_bone = ""
-												import_filter = 
-												{
-													exclude_by_default = false
-													exception_list = [  ]
-												}
-											},
-											{
-												_class = "RenderMeshFile"
-												name = "Chest_Assault_Commando_Gear_Pack_Rear"
-												filename = "models/spartans/chest_assault_commando_gear_pack_rear.smd"
-												import_translation = [ 0.0, 0.0, 0.0 ]
-												import_rotation = [ 0.0, 0.0, 0.0 ]
-												import_scale = 1.0
-												align_origin_x_type = "None"
-												align_origin_y_type = "None"
-												align_origin_z_type = "None"
-												parent_bone = ""
-												import_filter = 
-												{
-													exclude_by_default = false
-													exception_list = [  ]
-												}
-											},
-										]
-									},
-									{
-										_class = "Folder"
-										name = "C_Sapper"
-										children = 
-										[
-											{
-												_class = "RenderMeshFile"
-												name = "Chest_Assault_Sapper_Grenade_Belt"
-												filename = "models/spartans/chest_assault_sapper_grenade_belt.smd"
-												import_translation = [ 0.0, 0.0, 0.0 ]
-												import_rotation = [ 0.0, 0.0, 0.0 ]
-												import_scale = 1.0
-												align_origin_x_type = "None"
-												align_origin_y_type = "None"
-												align_origin_z_type = "None"
-												parent_bone = ""
-												import_filter = 
-												{
-													exclude_by_default = false
-													exception_list = [  ]
-												}
-											},
-											{
-												_class = "RenderMeshFile"
-												name = "Chest_Assault_Sapper_Grenade_Belt_Chest"
-												filename = "models/spartans/chest_assault_sapper_grenade_belt_chest.smd"
-												import_translation = [ 0.0, 0.0, 0.0 ]
-												import_rotation = [ 0.0, 0.0, 0.0 ]
-												import_scale = 1.0
-												align_origin_x_type = "None"
-												align_origin_y_type = "None"
-												align_origin_z_type = "None"
-												parent_bone = ""
-												import_filter = 
-												{
-													exclude_by_default = false
-													exception_list = [  ]
-												}
-											},
-											{
-												_class = "RenderMeshFile"
-												name = "Chest_Assault_Sapper_Grenade_Belt_Rear"
-												filename = "models/spartans/chest_assault_sapper_grenade_belt_rear.smd"
-												import_translation = [ 0.0, 0.0, 0.0 ]
-												import_rotation = [ 0.0, 0.0, 0.0 ]
-												import_scale = 1.0
-												align_origin_x_type = "None"
-												align_origin_y_type = "None"
-												align_origin_z_type = "None"
-												parent_bone = ""
-												import_filter = 
-												{
-													exclude_by_default = false
-													exception_list = [  ]
-												}
-											},
-											{
-												_class = "RenderMeshFile"
-												name = "Chest_Assault_Sapper_Grenades"
-												filename = "models/spartans/chest_assault_sapper_grenades.smd"
-												import_translation = [ 0.0, 0.0, 0.0 ]
-												import_rotation = [ 0.0, 0.0, 0.0 ]
-												import_scale = 1.0
-												align_origin_x_type = "None"
-												align_origin_y_type = "None"
-												align_origin_z_type = "None"
-												parent_bone = ""
-												import_filter = 
-												{
-													exclude_by_default = false
-													exception_list = [  ]
-												}
-											},
-										]
-									},
-								]
-							},
-							{
-								_class = "Folder"
 								name = "C_Collar"
 								children = 
 								[
@@ -412,245 +292,6 @@
 												}
 											},
 										]
-									},
-								]
-							},
-							{
-								_class = "Folder"
-								name = "C_HP"
-								children = 
-								[
-									{
-										_class = "RenderMeshFile"
-										name = "Chest_HP_Halo"
-										filename = "models/spartans/chest_hp_halo.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "Folder"
-										name = "C_Parafoil"
-										children = 
-										[
-											{
-												_class = "RenderMeshFile"
-												name = "Chest_HP_Parafoil"
-												filename = "models/spartans/chest_hp_parafoil.smd"
-												import_translation = [ 0.0, 0.0, 0.0 ]
-												import_rotation = [ 0.0, 0.0, 0.0 ]
-												import_scale = 1.0
-												align_origin_x_type = "None"
-												align_origin_y_type = "None"
-												align_origin_z_type = "None"
-												parent_bone = ""
-												import_filter = 
-												{
-													exclude_by_default = false
-													exception_list = [  ]
-												}
-											},
-											{
-												_class = "RenderMeshFile"
-												name = "Chest_HP_Parafoil_Pistol_Magazines"
-												filename = "models/spartans/chest_hp_parafoil_pistol_magazines.smd"
-												import_translation = [ 0.0, 0.0, 0.0 ]
-												import_rotation = [ 0.0, 0.0, 0.0 ]
-												import_scale = 1.0
-												align_origin_x_type = "None"
-												align_origin_y_type = "None"
-												align_origin_z_type = "None"
-												parent_bone = ""
-												import_filter = 
-												{
-													exclude_by_default = false
-													exception_list = [  ]
-												}
-											},
-										]
-									},
-								]
-							},
-							{
-								_class = "Folder"
-								name = "C_Tactical"
-								children = 
-								[
-									{
-										_class = "RenderMeshFile"
-										name = "Chest_Tactical_LRP"
-										filename = "models/spartans/chest_tactical_lrp.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Chest_Tactical_Recon"
-										filename = "models/spartans/chest_tactical_recon.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "Folder"
-										name = "C_Patrol"
-										children = 
-										[
-											{
-												_class = "RenderMeshFile"
-												name = "Chest_Tactical_Patrol_Backpack"
-												filename = "models/spartans/chest_tactical_patrol_backpack.smd"
-												import_translation = [ 0.0, 0.0, 0.0 ]
-												import_rotation = [ 0.0, 0.0, 0.0 ]
-												import_scale = 1.0
-												align_origin_x_type = "None"
-												align_origin_y_type = "None"
-												align_origin_z_type = "None"
-												parent_bone = ""
-												import_filter = 
-												{
-													exclude_by_default = false
-													exception_list = [  ]
-												}
-											},
-											{
-												_class = "RenderMeshFile"
-												name = "Chest_Tactical_Patrol_Ghillie"
-												filename = "models/spartans/chest_tactical_patrol_ghillie.smd"
-												import_translation = [ 0.0, 0.0, 0.0 ]
-												import_rotation = [ 0.0, 0.0, 0.0 ]
-												import_scale = 1.0
-												align_origin_x_type = "None"
-												align_origin_y_type = "None"
-												align_origin_z_type = "None"
-												parent_bone = ""
-												import_filter = 
-												{
-													exclude_by_default = false
-													exception_list = [  ]
-												}
-											},
-											{
-												_class = "RenderMeshFile"
-												name = "Chest_Tactical_Patrol_Harness"
-												filename = "models/spartans/chest_tactical_patrol_harness.smd"
-												import_translation = [ 0.0, 0.0, 0.0 ]
-												import_rotation = [ 0.0, 0.0, 0.0 ]
-												import_scale = 1.0
-												align_origin_x_type = "None"
-												align_origin_y_type = "None"
-												align_origin_z_type = "None"
-												parent_bone = ""
-												import_filter = 
-												{
-													exclude_by_default = false
-													exception_list = [  ]
-												}
-											},
-										]
-									},
-								]
-							},
-							{
-								_class = "Folder"
-								name = "C_UA"
-								children = 
-								[
-									{
-										_class = "RenderMeshFile"
-										name = "Chest_UA_Base_Security_W"
-										filename = "models/spartans/chest_ua_base_security_[w].smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Chest_UA_Counter_Assault"
-										filename = "models/spartans/chest_ua_counterassault.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Chest_UA_Multi_Threat_W"
-										filename = "models/spartans/chest_ua_multithreat_[w].smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Chest_UA_ODST"
-										filename = "models/spartans/chest_ua_odst.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
 									},
 								]
 							},
@@ -743,40 +384,6 @@
 									},
 									{
 										_class = "RenderMeshFile"
-										name = "Helmet_Air_Assault_Visor_Black"
-										filename = "models/spartans/helmet_air_assault_visor_black.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Helmet_Air_Assault_Visor_Blue"
-										filename = "models/spartans/helmet_air_assault_visor_blue.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
 										name = "Helmet_Air_Assault_Visor_Crack"
 										filename = "models/spartans/helmet_air_assault_visor_crack.smd"
 										import_translation = [ 0.0, 0.0, 0.0 ]
@@ -794,59 +401,8 @@
 									},
 									{
 										_class = "RenderMeshFile"
-										name = "Helmet_Air_Assault_Visor_Custom"
-										filename = "models/spartans/helmet_air_assault_visor_custom.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
 										name = "Helmet_Air_Assault_Visor_Default"
 										filename = "models/spartans/helmet_air_assault_visor_default.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Helmet_Air_Assault_Visor_Gold"
-										filename = "models/spartans/helmet_air_assault_visor_gold.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Helmet_Air_Assault_Visor_Silver"
-										filename = "models/spartans/helmet_air_assault_visor_silver.smd"
 										import_translation = [ 0.0, 0.0, 0.0 ]
 										import_rotation = [ 0.0, 0.0, 0.0 ]
 										import_scale = 1.0
@@ -886,40 +442,6 @@
 									},
 									{
 										_class = "RenderMeshFile"
-										name = "Helmet_Commando_Visor_Black"
-										filename = "models/spartans/helmet_commando_visor_black.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Helmet_Commando_Visor_Blue"
-										filename = "models/spartans/helmet_commando_visor_blue.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
 										name = "Helmet_Commando_Visor_Crack"
 										filename = "models/spartans/helmet_commando_visor_crack.smd"
 										import_translation = [ 0.0, 0.0, 0.0 ]
@@ -937,488 +459,8 @@
 									},
 									{
 										_class = "RenderMeshFile"
-										name = "Helmet_Commando_Visor_Custom"
-										filename = "models/spartans/helmet_commando_visor_custom.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
 										name = "Helmet_Commando_Visor_Default"
 										filename = "models/spartans/helmet_commando_visor_default.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Helmet_Commando_Visor_Gold"
-										filename = "models/spartans/helmet_commando_visor_gold.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Helmet_Commando_Visor_Silver"
-										filename = "models/spartans/helmet_commando_visor_silver.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-								]
-							},
-							{
-								_class = "Folder"
-								name = "H_CQB"
-								children = 
-								[
-									{
-										_class = "RenderMeshFile"
-										name = "Helmet_CQB"
-										filename = "models/spartans/helmet_cqb.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Helmet_CQB_Visor_Black"
-										filename = "models/spartans/helmet_cqb_visor_black.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Helmet_CQB_Visor_Blue"
-										filename = "models/spartans/helmet_cqb_visor_blue.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Helmet_CQB_Visor_Crack"
-										filename = "models/spartans/helmet_cqb_visor_crack.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Helmet_CQB_Visor_Custom"
-										filename = "models/spartans/helmet_cqb_visor_custom.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Helmet_CQB_Visor_Default"
-										filename = "models/spartans/helmet_cqb_visor_default.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Helmet_CQB_Visor_Gold"
-										filename = "models/spartans/helmet_cqb_visor_gold.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Helmet_CQB_Visor_Silver"
-										filename = "models/spartans/helmet_cqb_visor_silver.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-								]
-							},
-							{
-								_class = "Folder"
-								name = "H_CQC"
-								children = 
-								[
-									{
-										_class = "RenderMeshFile"
-										name = "Helmet_CQC"
-										filename = "models/spartans/helmet_cqc.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Helmet_CQC_Visor_Black"
-										filename = "models/spartans/helmet_cqc_visor_black.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Helmet_CQC_Visor_Blue"
-										filename = "models/spartans/helmet_cqc_visor_blue.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Helmet_CQC_Visor_Crack"
-										filename = "models/spartans/helmet_cqc_visor_crack.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Helmet_CQC_Visor_Custom"
-										filename = "models/spartans/helmet_cqc_visor_custom.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Helmet_CQC_Visor_Default"
-										filename = "models/spartans/helmet_cqc_visor_default.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Helmet_CQC_Visor_Gold"
-										filename = "models/spartans/helmet_cqc_visor_gold.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Helmet_CQC_Visor_Silver"
-										filename = "models/spartans/helmet_cqc_visor_silver.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-								]
-							},
-							{
-								_class = "Folder"
-								name = "H_EOD"
-								children = 
-								[
-									{
-										_class = "RenderMeshFile"
-										name = "Helmet_EOD"
-										filename = "models/spartans/helmet_eod.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Helmet_EOD_Visor_Black"
-										filename = "models/spartans/helmet_eod_visor_black.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Helmet_EOD_Visor_Blue"
-										filename = "models/spartans/helmet_eod_visor_blue.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Helmet_EOD_Visor_Crack"
-										filename = "models/spartans/helmet_eod_visor_crack.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Helmet_EOD_Visor_Custom"
-										filename = "models/spartans/helmet_eod_visor_custom.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Helmet_EOD_Visor_Default"
-										filename = "models/spartans/helmet_eod_visor_default.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Helmet_EOD_Visor_Gold"
-										filename = "models/spartans/helmet_eod_visor_gold.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Helmet_EOD_Visor_Silver"
-										filename = "models/spartans/helmet_eod_visor_silver.smd"
 										import_translation = [ 0.0, 0.0, 0.0 ]
 										import_rotation = [ 0.0, 0.0, 0.0 ]
 										import_scale = 1.0
@@ -1458,159 +500,6 @@
 									},
 									{
 										_class = "RenderMeshFile"
-										name = "Helmet_EVA_C"
-										filename = "models/spartans/helmet_eva[c].smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Helmet_EVA_C_Visor_Black"
-										filename = "models/spartans/helmet_eva[c]_visor_black.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Helmet_EVA_C_Visor_Blue"
-										filename = "models/spartans/helmet_eva[c]_visor_blue.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Helmet_EVA_C_Visor_Custom"
-										filename = "models/spartans/helmet_eva[c]_visor_custom.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Helmet_EVA_C_Visor_Default"
-										filename = "models/spartans/helmet_eva[c]_visor_default.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Helmet_EVA_C_Visor_Gold"
-										filename = "models/spartans/helmet_eva[c]_visor_gold.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Helmet_EVA_C_Visor_Silver"
-										filename = "models/spartans/helmet_eva[c]_visor_silver.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Helmet_EVA_Visor_Black"
-										filename = "models/spartans/helmet_eva_visor_black.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Helmet_EVA_Visor_Blue"
-										filename = "models/spartans/helmet_eva_visor_blue.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
 										name = "Helmet_EVA_Visor_Crack"
 										filename = "models/spartans/helmet_eva_visor_crack.smd"
 										import_translation = [ 0.0, 0.0, 0.0 ]
@@ -1628,59 +517,8 @@
 									},
 									{
 										_class = "RenderMeshFile"
-										name = "Helmet_EVA_Visor_Custom"
-										filename = "models/spartans/helmet_eva_visor_custom.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
 										name = "Helmet_EVA_Visor_Default"
 										filename = "models/spartans/helmet_eva_visor_default.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Helmet_EVA_Visor_Gold"
-										filename = "models/spartans/helmet_eva_visor_gold.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Helmet_EVA_Visor_Silver"
-										filename = "models/spartans/helmet_eva_visor_silver.smd"
 										import_translation = [ 0.0, 0.0, 0.0 ]
 										import_rotation = [ 0.0, 0.0, 0.0 ]
 										import_scale = 1.0
@@ -1720,40 +558,6 @@
 									},
 									{
 										_class = "RenderMeshFile"
-										name = "Helmet_Grenadier_Visor_Black"
-										filename = "models/spartans/helmet_grenadier_visor_black.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Helmet_Grenadier_Visor_Blue"
-										filename = "models/spartans/helmet_grenadier_visor_blue.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
 										name = "Helmet_Grenadier_Visor_Crack"
 										filename = "models/spartans/helmet_grenadier_visor_crack.smd"
 										import_translation = [ 0.0, 0.0, 0.0 ]
@@ -1771,403 +575,8 @@
 									},
 									{
 										_class = "RenderMeshFile"
-										name = "Helmet_Grenadier_Visor_Custom"
-										filename = "models/spartans/helmet_grenadier_visor_custom.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
 										name = "Helmet_Grenadier_Visor_Default"
 										filename = "models/spartans/helmet_grenadier_visor_default.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Helmet_Grenadier_Visor_Gold"
-										filename = "models/spartans/helmet_grenadier_visor_gold.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Helmet_Grenadier_Visor_Silver"
-										filename = "models/spartans/helmet_grenadier_visor_silver.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-								]
-							},
-							{
-								_class = "Folder"
-								name = "H_Gungnir"
-								children = 
-								[
-									{
-										_class = "RenderMeshFile"
-										name = "Helmet_Gungnir"
-										filename = "models/spartans/helmet_gungnir.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Helmet_Gungnir_Visor_Black"
-										filename = "models/spartans/helmet_gungnir_visor_black.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Helmet_Gungnir_Visor_Blue"
-										filename = "models/spartans/helmet_gungnir_visor_blue.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Helmet_Gungnir_Visor_Crack"
-										filename = "models/spartans/helmet_gungnir_visor_crack.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Helmet_Gungnir_Visor_Custom"
-										filename = "models/spartans/helmet_gungnir_visor_custom.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Helmet_Gungnir_Visor_Default"
-										filename = "models/spartans/helmet_gungnir_visor_default.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Helmet_Gungnir_Visor_Gold"
-										filename = "models/spartans/helmet_gungnir_visor_gold.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Helmet_Gungnir_Visor_Silver"
-										filename = "models/spartans/helmet_gungnir_visor_silver.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-								]
-							},
-							{
-								_class = "Folder"
-								name = "H_Haunted"
-								children = 
-								[
-									{
-										_class = "RenderMeshFile"
-										name = "Helmet_Haunted"
-										filename = "models/spartans/helmet_haunted.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Helmet_Haunted_Skull"
-										filename = "models/spartans/helmet_haunted_skull.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Helmet_Haunted_Visor"
-										filename = "models/spartans/helmet_haunted_visor.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-								]
-							},
-							{
-								_class = "Folder"
-								name = "H_Hazop"
-								children = 
-								[
-									{
-										_class = "RenderMeshFile"
-										name = "Helmet_Hazop"
-										filename = "models/spartans/helmet_hazop.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Helmet_Hazop_Visor_Black"
-										filename = "models/spartans/helmet_hazop_visor_black.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Helmet_Hazop_Visor_Blue"
-										filename = "models/spartans/helmet_hazop_visor_blue.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Helmet_Hazop_Visor_Crack"
-										filename = "models/spartans/helmet_hazop_visor_crack.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Helmet_Hazop_Visor_Custom"
-										filename = "models/spartans/helmet_hazop_visor_custom.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Helmet_Hazop_Visor_Default"
-										filename = "models/spartans/helmet_hazop_visor_default.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Helmet_Hazop_Visor_Gold"
-										filename = "models/spartans/helmet_hazop_visor_gold.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Helmet_Hazop_Visor_Silver"
-										filename = "models/spartans/helmet_hazop_visor_silver.smd"
 										import_translation = [ 0.0, 0.0, 0.0 ]
 										import_rotation = [ 0.0, 0.0, 0.0 ]
 										import_scale = 1.0
@@ -2207,40 +616,6 @@
 									},
 									{
 										_class = "RenderMeshFile"
-										name = "Helmet_JFO_Visor_Black"
-										filename = "models/spartans/helmet_jfo_visor_black.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Helmet_JFO_Visor_Blue"
-										filename = "models/spartans/helmet_jfo_visor_blue.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
 										name = "Helmet_JFO_Visor_Crack"
 										filename = "models/spartans/helmet_jfo_visor_crack.smd"
 										import_translation = [ 0.0, 0.0, 0.0 ]
@@ -2258,59 +633,8 @@
 									},
 									{
 										_class = "RenderMeshFile"
-										name = "Helmet_JFO_Visor_Custom"
-										filename = "models/spartans/helmet_jfo_visor_custom.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
 										name = "Helmet_JFO_Visor_Default"
 										filename = "models/spartans/helmet_jfo_visor_default.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Helmet_JFO_Visor_Gold"
-										filename = "models/spartans/helmet_jfo_visor_gold.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Helmet_JFO_Visor_Silver"
-										filename = "models/spartans/helmet_jfo_visor_silver.smd"
 										import_translation = [ 0.0, 0.0, 0.0 ]
 										import_rotation = [ 0.0, 0.0, 0.0 ]
 										import_scale = 1.0
@@ -2350,40 +674,6 @@
 									},
 									{
 										_class = "RenderMeshFile"
-										name = "Helmet_Military_Police_Visor_Black"
-										filename = "models/spartans/helmet_military_police_visor_black.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Helmet_Military_Police_Visor_Blue"
-										filename = "models/spartans/helmet_military_police_visor_blue.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
 										name = "Helmet_Military_Police_Visor_Crack"
 										filename = "models/spartans/helmet_military_police_visor_crack.smd"
 										import_translation = [ 0.0, 0.0, 0.0 ]
@@ -2401,59 +691,8 @@
 									},
 									{
 										_class = "RenderMeshFile"
-										name = "Helmet_Military_Police_Visor_Custom"
-										filename = "models/spartans/helmet_military_police_visor_custom.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
 										name = "Helmet_Military_Police_Visor_Default"
 										filename = "models/spartans/helmet_military_police_visor_default.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Helmet_Military_Police_Visor_Gold"
-										filename = "models/spartans/helmet_military_police_visor_gold.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Helmet_Military_Police_Visor_Silver"
-										filename = "models/spartans/helmet_military_police_visor_silver.smd"
 										import_translation = [ 0.0, 0.0, 0.0 ]
 										import_rotation = [ 0.0, 0.0, 0.0 ]
 										import_scale = 1.0
@@ -2493,176 +732,6 @@
 									},
 									{
 										_class = "RenderMeshFile"
-										name = "Helmet_Mjolnir_Mark_V_B"
-										filename = "models/spartans/helmet_mjolnir_mark_v[b].smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Helmet_Mjolnir_Mark_V_B_Visor_Black"
-										filename = "models/spartans/helmet_mjolnir_mark_v[b]_visor_black.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Helmet_Mjolnir_Mark_V_B_Visor_Blue"
-										filename = "models/spartans/helmet_mjolnir_mark_v[b]_visor_blue.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Helmet_Mjolnir_Mark_V_B_Visor_Crack"
-										filename = "models/spartans/helmet_mjolnir_mark_v[b]_visor_crack.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Helmet_Mjolnir_Mark_V_B_Visor_Custom"
-										filename = "models/spartans/helmet_mjolnir_mark_v[b]_visor_custom.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Helmet_Mjolnir_Mark_V_B_Visor_Default"
-										filename = "models/spartans/helmet_mjolnir_mark_v[b]_visor_default.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Helmet_Mjolnir_Mark_V_B_Visor_Gold"
-										filename = "models/spartans/helmet_mjolnir_mark_v[b]_visor_gold.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Helmet_Mjolnir_Mark_V_B_Visor_Silver"
-										filename = "models/spartans/helmet_mjolnir_mark_v[b]_visor_silver.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Helmet_Mjolnir_Mark_V_Visor_Black"
-										filename = "models/spartans/helmet_mjolnir_mark_v_visor_black.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Helmet_Mjolnir_Mark_V_Visor_Blue"
-										filename = "models/spartans/helmet_mjolnir_mark_v_visor_blue.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
 										name = "Helmet_Mjolnir_Mark_V_Visor_Crack"
 										filename = "models/spartans/helmet_mjolnir_mark_v_visor_crack.smd"
 										import_translation = [ 0.0, 0.0, 0.0 ]
@@ -2680,59 +749,8 @@
 									},
 									{
 										_class = "RenderMeshFile"
-										name = "Helmet_Mjolnir_Mark_V_Visor_Custom"
-										filename = "models/spartans/helmet_mjolnir_mark_v_visor_custom.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
 										name = "Helmet_Mjolnir_Mark_V_Visor_Default"
 										filename = "models/spartans/helmet_mjolnir_mark_v_visor_default.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Helmet_Mjolnir_Mark_V_Visor_Gold"
-										filename = "models/spartans/helmet_mjolnir_mark_v_visor_gold.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Helmet_Mjolnir_Mark_V_Visor_Silver"
-										filename = "models/spartans/helmet_mjolnir_mark_v_visor_silver.smd"
 										import_translation = [ 0.0, 0.0, 0.0 ]
 										import_rotation = [ 0.0, 0.0, 0.0 ]
 										import_scale = 1.0
@@ -2772,40 +790,6 @@
 									},
 									{
 										_class = "RenderMeshFile"
-										name = "Helmet_Mjolnir_Mark_VI_Visor_Black"
-										filename = "models/spartans/helmet_mjolnir_mark_vi_visor_black.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Helmet_Mjolnir_Mark_VI_Visor_Blue"
-										filename = "models/spartans/helmet_mjolnir_mark_vi_visor_blue.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
 										name = "Helmet_Mjolnir_Mark_VI_Visor_Crack"
 										filename = "models/spartans/helmet_mjolnir_mark_vi_visor_crack.smd"
 										import_translation = [ 0.0, 0.0, 0.0 ]
@@ -2823,59 +807,8 @@
 									},
 									{
 										_class = "RenderMeshFile"
-										name = "Helmet_Mjolnir_Mark_VI_Visor_Custom"
-										filename = "models/spartans/helmet_mjolnir_mark_vi_visor_custom.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
 										name = "Helmet_Mjolnir_Mark_VI_Visor_Default"
 										filename = "models/spartans/helmet_mjolnir_mark_vi_visor_default.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Helmet_Mjolnir_Mark_VI_Visor_Gold"
-										filename = "models/spartans/helmet_mjolnir_mark_vi_visor_gold.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Helmet_Mjolnir_Mark_VI_Visor_Silver"
-										filename = "models/spartans/helmet_mjolnir_mark_vi_visor_silver.smd"
 										import_translation = [ 0.0, 0.0, 0.0 ]
 										import_rotation = [ 0.0, 0.0, 0.0 ]
 										import_scale = 1.0
@@ -2915,40 +848,6 @@
 									},
 									{
 										_class = "RenderMeshFile"
-										name = "Helmet_ODST_Visor_Black"
-										filename = "models/spartans/helmet_odst_visor_black.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Helmet_ODST_Visor_Blue"
-										filename = "models/spartans/helmet_odst_visor_blue.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
 										name = "Helmet_ODST_Visor_Crack"
 										filename = "models/spartans/helmet_odst_visor_crack.smd"
 										import_translation = [ 0.0, 0.0, 0.0 ]
@@ -2966,202 +865,8 @@
 									},
 									{
 										_class = "RenderMeshFile"
-										name = "Helmet_ODST_Visor_Custom"
-										filename = "models/spartans/helmet_odst_visor_custom.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
 										name = "Helmet_ODST_Visor_Default"
 										filename = "models/spartans/helmet_odst_visor_default.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Helmet_ODST_Visor_Gold"
-										filename = "models/spartans/helmet_odst_visor_gold.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Helmet_ODST_Visor_Silver"
-										filename = "models/spartans/helmet_odst_visor_silver.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-								]
-							},
-							{
-								_class = "Folder"
-								name = "H_Operator"
-								children = 
-								[
-									{
-										_class = "RenderMeshFile"
-										name = "Helmet_Operator"
-										filename = "models/spartans/helmet_operator.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Helmet_Operator_Visor_Black"
-										filename = "models/spartans/helmet_operator_visor_black.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Helmet_Operator_Visor_Blue"
-										filename = "models/spartans/helmet_operator_visor_blue.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Helmet_Operator_Visor_Crack"
-										filename = "models/spartans/helmet_operator_visor_crack.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Helmet_Operator_Visor_Custom"
-										filename = "models/spartans/helmet_operator_visor_custom.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Helmet_Operator_Visor_Default"
-										filename = "models/spartans/helmet_operator_visor_default.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Helmet_Operator_Visor_Gold"
-										filename = "models/spartans/helmet_operator_visor_gold.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Helmet_Operator_Visor_Silver"
-										filename = "models/spartans/helmet_operator_visor_silver.smd"
 										import_translation = [ 0.0, 0.0, 0.0 ]
 										import_rotation = [ 0.0, 0.0, 0.0 ]
 										import_scale = 1.0
@@ -3201,40 +906,6 @@
 									},
 									{
 										_class = "RenderMeshFile"
-										name = "Helmet_Pilot_Visor_Black"
-										filename = "models/spartans/helmet_pilot_visor_black.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Helmet_Pilot_Visor_Blue"
-										filename = "models/spartans/helmet_pilot_visor_blue.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
 										name = "Helmet_Pilot_Visor_Crack"
 										filename = "models/spartans/helmet_pilot_visor_crack.smd"
 										import_translation = [ 0.0, 0.0, 0.0 ]
@@ -3252,59 +923,8 @@
 									},
 									{
 										_class = "RenderMeshFile"
-										name = "Helmet_Pilot_Visor_Custom"
-										filename = "models/spartans/helmet_pilot_visor_custom.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
 										name = "Helmet_Pilot_Visor_Default"
 										filename = "models/spartans/helmet_pilot_visor_default.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Helmet_Pilot_Visor_Gold"
-										filename = "models/spartans/helmet_pilot_visor_gold.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Helmet_Pilot_Visor_Silver"
-										filename = "models/spartans/helmet_pilot_visor_silver.smd"
 										import_translation = [ 0.0, 0.0, 0.0 ]
 										import_rotation = [ 0.0, 0.0, 0.0 ]
 										import_scale = 1.0
@@ -3344,59 +964,8 @@
 									},
 									{
 										_class = "RenderMeshFile"
-										name = "Helmet_Recon_Visor_Black"
-										filename = "models/spartans/helmet_recon_visor_black.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Helmet_Recon_Visor_Blue"
-										filename = "models/spartans/helmet_recon_visor_blue.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
 										name = "Helmet_Recon_Visor_Crack"
 										filename = "models/spartans/helmet_recon_visor_crack.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Helmet_Recon_Visor_Custom"
-										filename = "models/spartans/helmet_recon_visor_custom.smd"
 										import_translation = [ 0.0, 0.0, 0.0 ]
 										import_rotation = [ 0.0, 0.0, 0.0 ]
 										import_scale = 1.0
@@ -3427,1771 +996,400 @@
 											exception_list = [  ]
 										}
 									},
-									{
-										_class = "RenderMeshFile"
-										name = "Helmet_Recon_Visor_Gold"
-										filename = "models/spartans/helmet_recon_visor_gold.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Helmet_Recon_Visor_Silver"
-										filename = "models/spartans/helmet_recon_visor_silver.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-								]
-							},
-							{
-								_class = "Folder"
-								name = "H_Scout"
-								children = 
-								[
-									{
-										_class = "RenderMeshFile"
-										name = "Helmet_Scout"
-										filename = "models/spartans/helmet_scout.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Helmet_Scout_Visor_Black"
-										filename = "models/spartans/helmet_scout_visor_black.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Helmet_Scout_Visor_Blue"
-										filename = "models/spartans/helmet_scout_visor_blue.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Helmet_Scout_Visor_Crack"
-										filename = "models/spartans/helmet_scout_visor_crack.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Helmet_Scout_Visor_Custom"
-										filename = "models/spartans/helmet_scout_visor_custom.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Helmet_Scout_Visor_Default"
-										filename = "models/spartans/helmet_scout_visor_default.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Helmet_Scout_Visor_Gold"
-										filename = "models/spartans/helmet_scout_visor_gold.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Helmet_Scout_Visor_Silver"
-										filename = "models/spartans/helmet_scout_visor_silver.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-								]
-							},
-							{
-								_class = "Folder"
-								name = "H_Security"
-								children = 
-								[
-									{
-										_class = "RenderMeshFile"
-										name = "Helmet_Security"
-										filename = "models/spartans/helmet_security.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Helmet_Security_Visor_Black"
-										filename = "models/spartans/helmet_security_visor_black.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Helmet_Security_Visor_Blue"
-										filename = "models/spartans/helmet_security_visor_blue.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Helmet_Security_Visor_Crack"
-										filename = "models/spartans/helmet_security_visor_crack.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Helmet_Security_Visor_Custom"
-										filename = "models/spartans/helmet_security_visor_custom.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Helmet_Security_Visor_Default"
-										filename = "models/spartans/helmet_security_visor_default.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Helmet_Security_Visor_Gold"
-										filename = "models/spartans/helmet_security_visor_gold.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Helmet_Security_Visor_Silver"
-										filename = "models/spartans/helmet_security_visor_silver.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
 								]
 							},
 						]
 					},
+				]
+			},
+			{
+				_class = "BodyGroupList"
+				children = 
+				[
 					{
-						_class = "Folder"
-						name = "Flairs"
+						_class = "BodyGroup"
+						name = "Arms"
 						children = 
 						[
 							{
-								_class = "Folder"
-								name = "F_Left"
-								children = 
+								_class = "BodyGroupChoice"
+								meshes = 
 								[
-									{
-										_class = "RenderMeshFile"
-										name = "Flair_Adrianna_Helmet_Aug_Left"
-										filename = "models/spartans/instances_flair_adrianna_helmet_aug_left.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Flair_Anton_L_Ear_Piece_Left"
-										filename = "models/spartans/instances_flair_anton_l_ear_piece_left.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Flair_Auntie_Dot_Comms_Left"
-										filename = "models/spartans/instances_flair_auntie_dot_comms_left.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Flair_Kat_Helmet_AUG_Left"
-										filename = "models/spartans/instances_flair_kat_helmet_aug_left.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Flair_Kat_Helmet_AUG_Left_2"
-										filename = "models/spartans/instances_flair_kat_helmet_aug_left_2.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Flair_Mesh_Head_Piece_Emile_Left"
-										filename = "models/spartans/instances_flair_mesh_headpiece_emile_left.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
+									"Arms_Male",
 								]
 							},
 							{
-								_class = "Folder"
-								name = "F_Right"
-								children = 
+								_class = "BodyGroupChoice"
+								meshes = 
 								[
-									{
-										_class = "RenderMeshFile"
-										name = "Flair_Adrianna_Helmet_Aug_Right"
-										filename = "models/spartans/instances_flair_adrianna_helmet_aug_right.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Flair_Anton_L_Ear_Piece_Right"
-										filename = "models/spartans/instances_flair_anton_l_ear_piece_right.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Flair_Auntie_Dot_Comms_Right"
-										filename = "models/spartans/instances_flair_auntie_dot_comms_right.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Flair_Kat_Helmet_AUG_Right"
-										filename = "models/spartans/instances_flair_kat_helmet_aug_right.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Flair_Mesh_Head_Piece_Emile_Right"
-										filename = "models/spartans/instances_flair_mesh_headpiece_emile_right.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
+									"Arms_Male_Cyborg",
 								]
 							},
 							{
-								_class = "Folder"
-								name = "F_Helmet"
-								children = 
+								_class = "BodyGroupChoice"
+								meshes = 
 								[
-									{
-										_class = "RenderMeshFile"
-										name = "Flair_Default_Helmet_Brim"
-										filename = "models/spartans/instances_flair_default_helmet_brim.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Flair_Helmet"
-										filename = "models/spartans/instances_flair_helmet.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Flair_Helmet_Flare_Carter"
-										filename = "models/spartans/instances_flair_helmet_flare_carter.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Flair_Joshua_Helmet_AUG"
-										filename = "models/spartans/instances_flair_joshua_helmet_aug.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Flair_Jun_Head_Flare"
-										filename = "models/spartans/instances_flair_jun_head_flare.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Flair_Player_Issac_Helmet_AUGM"
-										filename = "models/spartans/instances_flair_player_issac_helmet_augm.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Flair_Player_Jai_Helmet_AUG"
-										filename = "models/spartans/instances_flair_player_jai_helmet_aug.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Flair_Player_Nicole_Helmet_AUG"
-										filename = "models/spartans/instances_flair_player_nicole_helmet_aug.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Flair_Player_VinH_Helmet_AUG"
-										filename = "models/spartans/instances_flair_player_vinh_helmet_aug.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Flair_Render_Helmet_Flare"
-										filename = "models/spartans/instances_flair_render_helmet_flare.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Flair_Sam_Helmet_AUG"
-										filename = "models/spartans/instances_flair_sam_helmet_aug.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
+									"Arms_Female",
+								]
+							},
+							{
+								_class = "BodyGroupChoice"
+								meshes = 
+								[
+									"Arms_Female_Cyborg",
 								]
 							},
 						]
+						hidden_in_tools = false
 					},
 					{
-						_class = "Folder"
-						name = "Knee_Guards"
+						_class = "BodyGroup"
+						name = "Bodies"
 						children = 
 						[
 							{
-								_class = "Folder"
-								name = "KG_Gungnir"
-								children = 
+								_class = "BodyGroupChoice"
+								meshes = 
 								[
-									{
-										_class = "RenderMeshFile"
-										name = "Knee_Guards_Gungnir_Left"
-										filename = "models/spartans/knee_guards_gungnir_left.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Knee_Guards_Gungnir_Right"
-										filename = "models/spartans/knee_guards_gungnir_right.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
+									"Body_Male",
 								]
 							},
 							{
-								_class = "Folder"
-								name = "KG_Grenadier"
-								children = 
+								_class = "BodyGroupChoice"
+								meshes = 
 								[
-									{
-										_class = "RenderMeshFile"
-										name = "Knee_Guards_Grenadier_Left"
-										filename = "models/spartans/knee_guards_grenadier_left.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Knee_Guards_Grenadier_Right"
-										filename = "models/spartans/knee_guards_grenadier_right.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
+									"Body_Male_Cyborg",
 								]
 							},
 							{
-								_class = "Folder"
-								name = "KG_FJ_Para"
-								children = 
+								_class = "BodyGroupChoice"
+								meshes = 
 								[
-									{
-										_class = "RenderMeshFile"
-										name = "Knee_Guards_FJ_Para_Left"
-										filename = "models/spartans/knee_guards_fj_para_left.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Knee_Guards_FJ_Para_Right"
-										filename = "models/spartans/knee_guards_fj_para_right.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
+									"Body_Female",
 								]
 							},
 							{
-								_class = "Folder"
-								name = "KG_Default"
-								children = 
+								_class = "BodyGroupChoice"
+								meshes = 
 								[
-									{
-										_class = "RenderMeshFile"
-										name = "Knee_Guards_Default_Left"
-										filename = "models/spartans/knee_guards_default_left.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Knee_Guards_Default_Right"
-										filename = "models/spartans/knee_guards_default_right.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
+									"Body_Female_Cyborg",
 								]
 							},
 						]
+						hidden_in_tools = false
 					},
 					{
-						_class = "Folder"
-						name = "Shoulders"
+						_class = "BodyGroup"
+						name = "Chests"
 						children = 
 						[
 							{
-								_class = "Folder"
-								name = "S_Right"
-								children = 
+								_class = "BodyGroupChoice"
+								meshes = [  ]
+							},
+							{
+								_class = "BodyGroupChoice"
+								meshes = 
 								[
-									{
-										_class = "RenderMeshFile"
-										name = "Shoulder_UA_Multi_Threat_Right"
-										filename = "models/spartans/shoulder_ua_multithreat_right.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Shoulder_UA_Base_Security_Right"
-										filename = "models/spartans/shoulder_ua_base_security_right.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Shoulder_Sniper_Right"
-										filename = "models/spartans/shoulder_sniper_right.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Shoulder_Security_Right_Knife"
-										filename = "models/spartans/shoulder_security_right_knife.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Shoulder_Security_Right"
-										filename = "models/spartans/shoulder_security_right.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Shoulder_Recon_Right"
-										filename = "models/spartans/shoulder_recon_right.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Shoulder_Operator_Right"
-										filename = "models/spartans/shoulder_operator_right.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Shoulder_ODST_Right"
-										filename = "models/spartans/shoulder_ODST_right.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Shoulder_Mjolnir_Mark_V_Right"
-										filename = "models/spartans/shoulder_mjolnir_mark_v_right.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Shoulder_Jump_Jet_Right"
-										filename = "models/spartans/shoulder_jump_jet_right.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Shoulder_JFO_Right"
-										filename = "models/spartans/shoulder_jfo_right.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Shoulder_Hazop_Right"
-										filename = "models/spartans/shoulder_hazop_right.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Shoulder_Gungnir_Right"
-										filename = "models/spartans/shoulder_GUNGNIR_right.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Shoulder_Grenadier_Right"
-										filename = "models/spartans/shoulder_grenadier_right.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Shoulder_FJ_Para_Right_Cyborg"
-										filename = "models/spartans/shoulder_fj_para_right_cyborg.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Shoulder_FJ_Para_Right"
-										filename = "models/spartans/shoulder_fj_para_right.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Shoulder_EVA_Right"
-										filename = "models/spartans/shoulder_eva_right.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Shoulder_Commando_Right"
-										filename = "models/spartans/shoulder_commando_right.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Shoulder_CQC_Right"
-										filename = "models/spartans/shoulder_CQC_right.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
+									"Chest_Collar_Breacher",
 								]
 							},
 							{
-								_class = "Folder"
-								name = "S_Left"
-								children = 
+								_class = "BodyGroupChoice"
+								meshes = 
 								[
-									{
-										_class = "RenderMeshFile"
-										name = "Shoulder_Commando_Left"
-										filename = "models/spartans/shoulder_commando_left.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Shoulder_CQC_Left"
-										filename = "models/spartans/shoulder_CQC_left.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Shoulder_EVA_Left"
-										filename = "models/spartans/shoulder_eva_left.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Shoulder_FJ_Para_Left"
-										filename = "models/spartans/shoulder_fj_para_left.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Shoulder_Grenadier_Left"
-										filename = "models/spartans/shoulder_grenadier_left.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Shoulder_Gungnir_Left"
-										filename = "models/spartans/shoulder_GUNGNIR_left.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Shoulder_Hazop_Left"
-										filename = "models/spartans/shoulder_hazop_left.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Shoulder_JFO_Left"
-										filename = "models/spartans/shoulder_jfo_left.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Shoulder_Jump_Jet_Left"
-										filename = "models/spartans/shoulder_jump_jet_left.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Shoulder_Mjolnir_Mark_V_Left"
-										filename = "models/spartans/shoulder_mjolnir_mark_v_left.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Shoulder_ODST_Left"
-										filename = "models/spartans/shoulder_ODST_left.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Shoulder_Operator_Left"
-										filename = "models/spartans/shoulder_operator_left.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Shoulder_Recon_Left"
-										filename = "models/spartans/shoulder_recon_left.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Shoulder_Security_Left"
-										filename = "models/spartans/shoulder_security_left.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Shoulder_Sniper_Left"
-										filename = "models/spartans/shoulder_sniper_left.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Shoulder_UA_Base_Security_Left"
-										filename = "models/spartans/shoulder_ua_base_security_left.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Shoulder_UA_Multi_Threat_Left"
-										filename = "models/spartans/shoulder_ua_multithreat_left.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
+									"Chest_Collar_Grenadier",
+								]
+							},
+							{
+								_class = "BodyGroupChoice"
+								meshes = 
+								[
+									"Chest_Collar_Grenadier_UA",
 								]
 							},
 						]
+						hidden_in_tools = false
 					},
 					{
-						_class = "Folder"
-						name = "Utilities"
+						_class = "BodyGroup"
+						name = "Decals"
 						children = 
 						[
 							{
-								_class = "Folder"
-								name = "U_Tactical"
-								children = 
+								_class = "BodyGroupChoice"
+								meshes = [  ]
+							},
+							{
+								_class = "BodyGroupChoice"
+								meshes = 
 								[
-									{
-										_class = "RenderMeshFile"
-										name = "Utility_Tactical_Hard_Case"
-										filename = "models/spartans/utility_tactical_hard_case.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Utility_Tactical_Soft_Case"
-										filename = "models/spartans/utility_tactical_soft_case.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Utility_Tactical_Trauma_Kit"
-										filename = "models/spartans/utility_tactical_trauma_kit.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
+									"Decals_Carter",
 								]
 							},
 							{
-								_class = "Folder"
-								name = "U_UA"
-								children = 
+								_class = "BodyGroupChoice"
+								meshes = 
 								[
-									{
-										_class = "RenderMeshFile"
-										name = "Utility_UA_Chobham"
-										filename = "models/spartans/utility_ua_chobham.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Utility_UA_NXRA"
-										filename = "models/spartans/utility_ua_nxra.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
+									"Decals_Emile",
+								]
+							},
+							{
+								_class = "BodyGroupChoice"
+								meshes = 
+								[
+									"Decals_John_117",
 								]
 							},
 						]
+						hidden_in_tools = false
 					},
 					{
-						_class = "Folder"
-						name = "Wrists"
+						_class = "BodyGroup"
+						name = "Helmets"
 						children = 
 						[
 							{
-								_class = "Folder"
-								name = "W_Assault"
-								children = 
+								_class = "BodyGroupChoice"
+								meshes = 
 								[
-									{
-										_class = "RenderMeshFile"
-										name = "Wrist_Assault_Breacher_Left"
-										filename = "models/spartans/wrist_assault_breacher_left.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Wrist_Assault_Breacher_Right"
-										filename = "models/spartans/wrist_assault_breacher_right.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
+									"Helmet_Commando",
 								]
 							},
 							{
-								_class = "Folder"
-								name = "W_Tactical"
-								children = 
+								_class = "BodyGroupChoice"
+								meshes = 
 								[
-									{
-										_class = "RenderMeshFile"
-										name = "Wrist_Tactical_TacPad"
-										filename = "models/spartans/wrist_tactical_tacpad.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Wrist_Tactical_UGPS"
-										filename = "models/spartans/wrist_tactical_ugps.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
+									"Helmet_Air_Assault",
 								]
 							},
 							{
-								_class = "Folder"
-								name = "W_UA"
-								children = 
+								_class = "BodyGroupChoice"
+								meshes = 
 								[
-									{
-										_class = "RenderMeshFile"
-										name = "Wrist_UA_Bracer"
-										filename = "models/spartans/wrist_ua_bracer.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
-									{
-										_class = "RenderMeshFile"
-										name = "Wrist_UA_Buckler"
-										filename = "models/spartans/wrist_ua_buckler.smd"
-										import_translation = [ 0.0, 0.0, 0.0 ]
-										import_rotation = [ 0.0, 0.0, 0.0 ]
-										import_scale = 1.0
-										align_origin_x_type = "None"
-										align_origin_y_type = "None"
-										align_origin_z_type = "None"
-										parent_bone = ""
-										import_filter = 
-										{
-											exclude_by_default = false
-											exception_list = [  ]
-										}
-									},
+									"Helmet_EVA",
+								]
+							},
+							{
+								_class = "BodyGroupChoice"
+								meshes = 
+								[
+									"Helmet_Grenadier",
+								]
+							},
+							{
+								_class = "BodyGroupChoice"
+								meshes = 
+								[
+									"Helmet_JFO",
+								]
+							},
+							{
+								_class = "BodyGroupChoice"
+								meshes = 
+								[
+									"Helmet_Military_Police",
+								]
+							},
+							{
+								_class = "BodyGroupChoice"
+								meshes = 
+								[
+									"Helmet_Mjolnir_Mark_V",
+								]
+							},
+							{
+								_class = "BodyGroupChoice"
+								meshes = 
+								[
+									"Helmet_Mjolnir_Mark_VI",
+								]
+							},
+							{
+								_class = "BodyGroupChoice"
+								meshes = 
+								[
+									"Helmet_ODST",
+								]
+							},
+							{
+								_class = "BodyGroupChoice"
+								meshes = 
+								[
+									"Helmet_Pilot",
+								]
+							},
+							{
+								_class = "BodyGroupChoice"
+								meshes = 
+								[
+									"Helmet_Recon",
 								]
 							},
 						]
+						hidden_in_tools = false
+					},
+					{
+						_class = "BodyGroup"
+						name = "Visors"
+						children = 
+						[
+							{
+								_class = "BodyGroupChoice"
+								meshes = 
+								[
+									"Helmet_Air_Assault_Visor_Default",
+								]
+							},
+							{
+								_class = "BodyGroupChoice"
+								meshes = 
+								[
+									"Helmet_Air_Assault_Visor_Crack",
+								]
+							},
+							{
+								_class = "BodyGroupChoice"
+								meshes = 
+								[
+									"Helmet_Commando_Visor_Default",
+								]
+							},
+							{
+								_class = "BodyGroupChoice"
+								meshes = 
+								[
+									"Helmet_Commando_Visor_Crack",
+								]
+							},
+							{
+								_class = "BodyGroupChoice"
+								meshes = 
+								[
+									"Helmet_EVA_Visor_Default",
+								]
+							},
+							{
+								_class = "BodyGroupChoice"
+								meshes = 
+								[
+									"Helmet_EVA_Visor_Crack",
+								]
+							},
+							{
+								_class = "BodyGroupChoice"
+								meshes = 
+								[
+									"Helmet_Grenadier_Visor_Default",
+								]
+							},
+							{
+								_class = "BodyGroupChoice"
+								meshes = 
+								[
+									"Helmet_Grenadier_Visor_Crack",
+								]
+							},
+							{
+								_class = "BodyGroupChoice"
+								meshes = 
+								[
+									"Helmet_JFO_Visor_Default",
+								]
+							},
+							{
+								_class = "BodyGroupChoice"
+								meshes = 
+								[
+									"Helmet_JFO_Visor_Crack",
+								]
+							},
+							{
+								_class = "BodyGroupChoice"
+								meshes = 
+								[
+									"Helmet_Military_Police_Visor_Default",
+								]
+							},
+							{
+								_class = "BodyGroupChoice"
+								meshes = 
+								[
+									"Helmet_Military_Police_Visor_Crack",
+								]
+							},
+							{
+								_class = "BodyGroupChoice"
+								meshes = 
+								[
+									"Helmet_Mjolnir_Mark_V_Visor_Default",
+								]
+							},
+							{
+								_class = "BodyGroupChoice"
+								meshes = 
+								[
+									"Helmet_Mjolnir_Mark_V_Visor_Crack",
+								]
+							},
+							{
+								_class = "BodyGroupChoice"
+								meshes = 
+								[
+									"Helmet_Mjolnir_Mark_VI_Visor_Default",
+								]
+							},
+							{
+								_class = "BodyGroupChoice"
+								meshes = 
+								[
+									"Helmet_Mjolnir_Mark_VI_Visor_Crack",
+								]
+							},
+							{
+								_class = "BodyGroupChoice"
+								meshes = 
+								[
+									"Helmet_ODST_Visor_Default",
+								]
+							},
+							{
+								_class = "BodyGroupChoice"
+								meshes = 
+								[
+									"Helmet_ODST_Visor_Crack",
+								]
+							},
+							{
+								_class = "BodyGroupChoice"
+								meshes = 
+								[
+									"Helmet_Pilot_Visor_Default",
+								]
+							},
+							{
+								_class = "BodyGroupChoice"
+								meshes = 
+								[
+									"Helmet_Pilot_Visor_Crack",
+								]
+							},
+							{
+								_class = "BodyGroupChoice"
+								meshes = 
+								[
+									"Helmet_Recon_Visor_Default",
+								]
+							},
+							{
+								_class = "BodyGroupChoice"
+								meshes = 
+								[
+									"Helmet_Recon_Visor_Crack",
+								]
+							},
+						]
+						hidden_in_tools = false
 					},
 				]
 			},
