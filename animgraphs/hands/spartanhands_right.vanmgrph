@@ -470,7 +470,7 @@
 				m_sNote = ""
 				m_childID = 
 				{
-					m_id = 770235078
+					m_id = 1165453271
 				}
 			}
 		},
@@ -806,7 +806,7 @@
 				[
 					{
 						_class = "CSolveIKChainAnimNodeChainData"
-						m_IkChain = "right_hand_ik"
+						m_IkChain = "right_arm_ik"
 						m_SolverSettingSource = "SOLVEIKCHAINANIMNODESETTINGSOURCE_Default"
 						m_OverrideSolverSettings = 
 						{
