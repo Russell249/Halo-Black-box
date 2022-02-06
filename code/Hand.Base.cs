@@ -43,6 +43,7 @@ namespace HBB
 			SetAnimFloat( "Index", InputHand.GetFingerCurl( 1 ) );
 			SetAnimFloat( "Middle", InputHand.GetFingerCurl( 2 ) );
 			SetAnimFloat( "Ring", InputHand.GetFingerCurl( 3 ) );
+			SetAnimFloat("Pinky", InputHand.GetFingerCurl(4));
 			SetAnimFloat( "Thumb", InputHand.GetFingerCurl( 0 ) );
 		}
 	}

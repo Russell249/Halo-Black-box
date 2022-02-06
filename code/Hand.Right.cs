@@ -4,7 +4,7 @@ namespace HBB
 {
 	public class RightHand : BaseHand
 	{
-		protected override string ModelPath => "models/hands/handright.vmdl";
+		protected override string ModelPath => "models/spartans/spartanhands/spartan_hand_right.vmdl";
 		public override Input.VrHand InputHand => Input.VR.RightHand;
 
 		public override void Spawn()
@@ -12,6 +12,10 @@ namespace HBB
 			base.Spawn();
 			Log.Info( "VR Controller Right Spawned" );
 			SetInteractsAs( CollisionLayer.RIGHT_HAND );
+			SetAnimVector("right_hand_ik_pos", Position);
+			SetAnimRotation("right_hand_ik_rot", Rotation);
+			SetAnimVector("right_arm_ik_pos", Input.VR.Head.Position);
+			// SetAnimRotation("right_arm_ik_rot", Input.VR.Head.Rotation);
 		}
 	}
 }
