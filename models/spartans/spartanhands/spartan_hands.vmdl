@@ -167,173 +167,13 @@
 				[
 					{
 						_class = "WeightList"
-						name = "Index_L"
+						name = "Index"
 						default_weight = 0.0
 						weights = 
 						[
 							{
 								bone = "bip_index_0_L"
 								weight = 1.0
-							},
-							{
-								bone = "finger_index_meta_R"
-								weight = 1.0
-							},
-						]
-						master_morph_weight = -1.0
-						morph_weights = [  ]
-					},
-					{
-						_class = "WeightList"
-						name = "Middle_L"
-						default_weight = 0.0
-						weights = 
-						[
-							{
-								bone = "bip_middle_0_L"
-								weight = 1.0
-							},
-							{
-								bone = "finger_index_meta_R"
-								weight = 0.0
-							},
-							{
-								bone = "finger_middle_meta_R"
-								weight = 1.0
-							},
-						]
-						master_morph_weight = -1.0
-						morph_weights = [  ]
-					},
-					{
-						_class = "WeightList"
-						name = "Ring_L"
-						default_weight = 0.0
-						weights = 
-						[
-							{
-								bone = "bip_ring_0_L"
-								weight = 1.0
-							},
-							{
-								bone = "finger_index_meta_R"
-								weight = 0.0
-							},
-							{
-								bone = "finger_ring_meta_R"
-								weight = 1.0
-							},
-						]
-						master_morph_weight = -1.0
-						morph_weights = [  ]
-					},
-					{
-						_class = "WeightList"
-						name = "Thumb_L"
-						default_weight = 0.0
-						weights = 
-						[
-							{
-								bone = "bip_thumb_0_L"
-								weight = 1.0
-							},
-							{
-								bone = "finger_index_meta_R"
-								weight = 0.0
-							},
-							{
-								bone = "finger_thumb_0_R"
-								weight = 1.0
-							},
-						]
-						master_morph_weight = -1.0
-						morph_weights = [  ]
-					},
-					{
-						_class = "WeightList"
-						name = "Base_L"
-						default_weight = 0.0
-						weights = 
-						[
-							{
-								bone = "b_l_wrist_fixup"
-								weight = 1.0
-							},
-							{
-								bone = "bip_hand_L"
-								weight = 1.0
-							},
-							{
-								bone = "bip_index_0_L"
-								weight = 0.0
-							},
-							{
-								bone = "bip_middle_0_L"
-								weight = 0.0
-							},
-							{
-								bone = "bip_pinky_0_L"
-								weight = 0.0
-							},
-							{
-								bone = "bip_ring_0_L"
-								weight = 0.0
-							},
-							{
-								bone = "bip_thumb_0_L"
-								weight = 0.0
-							},
-							{
-								bone = "bip_upperArm_L"
-								weight = 1.0
-							},
-							{
-								bone = "finger_index_meta_R"
-								weight = 0.0
-							},
-							{
-								bone = "finger_middle_meta_R"
-								weight = 0.0
-							},
-							{
-								bone = "finger_ring_meta_R"
-								weight = 0.0
-							},
-							{
-								bone = "finger_thumb_0_R"
-								weight = 0.0
-							},
-							{
-								bone = "hand_R"
-								weight = 1.0
-							},
-						]
-						master_morph_weight = -1.0
-						morph_weights = [  ]
-					},
-					{
-						_class = "WeightList"
-						name = "Pinky_L"
-						default_weight = 0.0
-						weights = 
-						[
-							{
-								bone = "bip_pinky_0_L"
-								weight = 1.0
-							},
-						]
-						master_morph_weight = -1.0
-						morph_weights = [  ]
-					},
-					{
-						_class = "WeightList"
-						name = "Index_R"
-						default_weight = 0.0
-						weights = 
-						[
-							{
-								bone = "bip_index_0_L"
-								weight = 0.0
 							},
 							{
 								bone = "bip_index_0_R"
@@ -349,13 +189,13 @@
 					},
 					{
 						_class = "WeightList"
-						name = "Middle_R"
+						name = "Middle"
 						default_weight = 0.0
 						weights = 
 						[
 							{
 								bone = "bip_middle_0_L"
-								weight = 0.0
+								weight = 1.0
 							},
 							{
 								bone = "bip_middle_0_R"
@@ -375,13 +215,13 @@
 					},
 					{
 						_class = "WeightList"
-						name = "Ring_R"
+						name = "Ring"
 						default_weight = 0.0
 						weights = 
 						[
 							{
 								bone = "bip_ring_0_L"
-								weight = 0.0
+								weight = 1.0
 							},
 							{
 								bone = "bip_ring_0_R"
@@ -401,13 +241,13 @@
 					},
 					{
 						_class = "WeightList"
-						name = "Thumb_R"
+						name = "Thumb"
 						default_weight = 0.0
 						weights = 
 						[
 							{
 								bone = "bip_thumb_0_L"
-								weight = 0.0
+								weight = 1.0
 							},
 							{
 								bone = "bip_thumb_0_R"
@@ -427,7 +267,7 @@
 					},
 					{
 						_class = "WeightList"
-						name = "Base_R"
+						name = "Base"
 						default_weight = 0.0
 						weights = 
 						[
@@ -441,7 +281,11 @@
 							},
 							{
 								bone = "bip_hand_L"
-								weight = 0.0
+								weight = 1.0
+							},
+							{
+								bone = "bip_hand_R"
+								weight = 1.0
 							},
 							{
 								bone = "bip_index_0_L"
@@ -450,6 +294,10 @@
 							{
 								bone = "bip_index_0_R"
 								weight = 0.0
+							},
+							{
+								bone = "bip_lowerArm_R"
+								weight = 1.0
 							},
 							{
 								bone = "bip_middle_0_L"
@@ -485,7 +333,7 @@
 							},
 							{
 								bone = "bip_upperArm_L"
-								weight = 0.0
+								weight = 1.0
 							},
 							{
 								bone = "bip_upperArm_R"
@@ -517,13 +365,13 @@
 					},
 					{
 						_class = "WeightList"
-						name = "Pinky_R"
+						name = "Pinky"
 						default_weight = 0.0
 						weights = 
 						[
 							{
 								bone = "bip_pinky_0_L"
-								weight = 0.0
+								weight = 1.0
 							},
 							{
 								bone = "bip_pinky_0_R"
@@ -554,27 +402,6 @@
 						anim_markup_ordered = false
 						disable_compression = false
 						source_filename = "models/spartans/spartanhands/left_close.dmx"
-						start_frame = -1
-						end_frame = 60
-						framerate = -1.0
-						take = 0
-						reverse = false
-					},
-					{
-						_class = "AnimFile"
-						name = "left_close2"
-						activity_name = ""
-						activity_weight = 1
-						weight_list_name = ""
-						fade_in_time = 0.2
-						fade_out_time = 0.2
-						looping = false
-						delta = false
-						worldSpace = false
-						hidden = false
-						anim_markup_ordered = false
-						disable_compression = false
-						source_filename = "models/spartans/spartanhands/left_close2.dmx"
 						start_frame = -1
 						end_frame = 60
 						framerate = -1.0
