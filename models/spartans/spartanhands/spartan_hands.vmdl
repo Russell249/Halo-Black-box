@@ -65,9 +65,528 @@
 					},
 				]
 			},
+			{
+				_class = "IKData"
+				children = 
+				[
+					{
+						_class = "IKChain"
+						name = "right_hand_ik"
+						children = 
+						[
+							{
+								_class = "IKChainJoint"
+								name = "bip_upperArm_R"
+								children = 
+								[
+									{
+										_class = "IKChainJoint"
+										name = "bip_lowerArm_R"
+										children = 
+										[
+											{
+												_class = "IKChainJoint"
+												name = "bip_hand_R"
+												bone = "bip_hand_R"
+											},
+										]
+										bone = "bip_lowerArm_R"
+									},
+								]
+								bone = "bip_upperArm_R"
+							},
+						]
+						m_bDoBonesOrientAlongPositiveX = true
+						"m_DefaultSolverSettings.m_nNumIterations" = 6
+						"m_DefaultSolverSettings.m_SolverType " = "IKSOLVER_TwoBone"
+						"m_DefaultTargetSettings.m_Bone" = 
+						{
+							m_Name = "bip_hand_R"
+						}
+						"m_DefaultTargetSettings.m_TargetSource" = "Bone"
+						"m_Data.m_DefaultTargetSettings.m_AnimgraphParameterNamePosition" = 
+						{
+							m_id = 4294967295
+						}
+						"m_Data.m_EndEffectorFixedOffsetAttachment" = 
+						{
+							m_Name = ""
+						}
+						"m_Data.m_bParentJointRequiresAlignment" = true
+					},
+					{
+						_class = "IKChain"
+						name = "left_hand_ik"
+						children = 
+						[
+							{
+								_class = "IKChainJoint"
+								name = "upperArm_L"
+								children = 
+								[
+									{
+										_class = "IKChainJoint"
+										name = "lowerArm_L"
+										children = 
+										[
+											{
+												_class = "IKChainJoint"
+												name = "hand_L"
+												bone = "bip_hand_L"
+											},
+										]
+										bone = "bip_lowerArm_L"
+									},
+								]
+								bone = "bip_upperArm_L"
+							},
+						]
+						m_bDoBonesOrientAlongPositiveX = true
+						"m_DefaultSolverSettings.m_nNumIterations" = 6
+						"m_DefaultSolverSettings.m_SolverType " = "IKSOLVER_TwoBone"
+						"m_DefaultTargetSettings.m_Bone" = 
+						{
+							m_Name = "bip_hand_L"
+						}
+						"m_DefaultTargetSettings.m_TargetSource" = "Bone"
+						"m_Data.m_DefaultTargetSettings.m_AnimgraphParameterNamePosition" = 
+						{
+							m_id = 4294967295
+						}
+						"m_Data.m_EndEffectorFixedOffsetAttachment" = 
+						{
+							m_Name = ""
+						}
+						"m_Data.m_bParentJointRequiresAlignment" = true
+					},
+				]
+			},
+			{
+				_class = "WeightListList"
+				children = 
+				[
+					{
+						_class = "WeightList"
+						name = "Index_L"
+						default_weight = 0.0
+						weights = 
+						[
+							{
+								bone = "bip_index_0_L"
+								weight = 1.0
+							},
+							{
+								bone = "finger_index_meta_R"
+								weight = 1.0
+							},
+						]
+						master_morph_weight = -1.0
+						morph_weights = [  ]
+					},
+					{
+						_class = "WeightList"
+						name = "Middle_L"
+						default_weight = 0.0
+						weights = 
+						[
+							{
+								bone = "bip_middle_0_L"
+								weight = 1.0
+							},
+							{
+								bone = "finger_index_meta_R"
+								weight = 0.0
+							},
+							{
+								bone = "finger_middle_meta_R"
+								weight = 1.0
+							},
+						]
+						master_morph_weight = -1.0
+						morph_weights = [  ]
+					},
+					{
+						_class = "WeightList"
+						name = "Ring_L"
+						default_weight = 0.0
+						weights = 
+						[
+							{
+								bone = "bip_ring_0_L"
+								weight = 1.0
+							},
+							{
+								bone = "finger_index_meta_R"
+								weight = 0.0
+							},
+							{
+								bone = "finger_ring_meta_R"
+								weight = 1.0
+							},
+						]
+						master_morph_weight = -1.0
+						morph_weights = [  ]
+					},
+					{
+						_class = "WeightList"
+						name = "Thumb_L"
+						default_weight = 0.0
+						weights = 
+						[
+							{
+								bone = "bip_thumb_0_L"
+								weight = 1.0
+							},
+							{
+								bone = "finger_index_meta_R"
+								weight = 0.0
+							},
+							{
+								bone = "finger_thumb_0_R"
+								weight = 1.0
+							},
+						]
+						master_morph_weight = -1.0
+						morph_weights = [  ]
+					},
+					{
+						_class = "WeightList"
+						name = "Base_L"
+						default_weight = 0.0
+						weights = 
+						[
+							{
+								bone = "b_l_wrist_fixup"
+								weight = 1.0
+							},
+							{
+								bone = "bip_hand_L"
+								weight = 1.0
+							},
+							{
+								bone = "bip_index_0_L"
+								weight = 0.0
+							},
+							{
+								bone = "bip_middle_0_L"
+								weight = 0.0
+							},
+							{
+								bone = "bip_pinky_0_L"
+								weight = 0.0
+							},
+							{
+								bone = "bip_ring_0_L"
+								weight = 0.0
+							},
+							{
+								bone = "bip_thumb_0_L"
+								weight = 0.0
+							},
+							{
+								bone = "bip_upperArm_L"
+								weight = 1.0
+							},
+							{
+								bone = "finger_index_meta_R"
+								weight = 0.0
+							},
+							{
+								bone = "finger_middle_meta_R"
+								weight = 0.0
+							},
+							{
+								bone = "finger_ring_meta_R"
+								weight = 0.0
+							},
+							{
+								bone = "finger_thumb_0_R"
+								weight = 0.0
+							},
+							{
+								bone = "hand_R"
+								weight = 1.0
+							},
+						]
+						master_morph_weight = -1.0
+						morph_weights = [  ]
+					},
+					{
+						_class = "WeightList"
+						name = "Pinky_L"
+						default_weight = 0.0
+						weights = 
+						[
+							{
+								bone = "bip_pinky_0_L"
+								weight = 1.0
+							},
+						]
+						master_morph_weight = -1.0
+						morph_weights = [  ]
+					},
+					{
+						_class = "WeightList"
+						name = "Index_R"
+						default_weight = 0.0
+						weights = 
+						[
+							{
+								bone = "bip_index_0_L"
+								weight = 0.0
+							},
+							{
+								bone = "bip_index_0_R"
+								weight = 1.0
+							},
+							{
+								bone = "finger_index_meta_R"
+								weight = 1.0
+							},
+						]
+						master_morph_weight = -1.0
+						morph_weights = [  ]
+					},
+					{
+						_class = "WeightList"
+						name = "Middle_R"
+						default_weight = 0.0
+						weights = 
+						[
+							{
+								bone = "bip_middle_0_L"
+								weight = 0.0
+							},
+							{
+								bone = "bip_middle_0_R"
+								weight = 1.0
+							},
+							{
+								bone = "finger_index_meta_R"
+								weight = 0.0
+							},
+							{
+								bone = "finger_middle_meta_R"
+								weight = 1.0
+							},
+						]
+						master_morph_weight = -1.0
+						morph_weights = [  ]
+					},
+					{
+						_class = "WeightList"
+						name = "Ring_R"
+						default_weight = 0.0
+						weights = 
+						[
+							{
+								bone = "bip_ring_0_L"
+								weight = 0.0
+							},
+							{
+								bone = "bip_ring_0_R"
+								weight = 1.0
+							},
+							{
+								bone = "finger_index_meta_R"
+								weight = 0.0
+							},
+							{
+								bone = "finger_ring_meta_R"
+								weight = 1.0
+							},
+						]
+						master_morph_weight = -1.0
+						morph_weights = [  ]
+					},
+					{
+						_class = "WeightList"
+						name = "Thumb_R"
+						default_weight = 0.0
+						weights = 
+						[
+							{
+								bone = "bip_thumb_0_L"
+								weight = 0.0
+							},
+							{
+								bone = "bip_thumb_0_R"
+								weight = 1.0
+							},
+							{
+								bone = "finger_index_meta_R"
+								weight = 0.0
+							},
+							{
+								bone = "finger_thumb_0_R"
+								weight = 1.0
+							},
+						]
+						master_morph_weight = -1.0
+						morph_weights = [  ]
+					},
+					{
+						_class = "WeightList"
+						name = "Base_R"
+						default_weight = 0.0
+						weights = 
+						[
+							{
+								bone = "b_l_wrist_fixup"
+								weight = 1.0
+							},
+							{
+								bone = "b_r_wrist_fixup"
+								weight = 1.0
+							},
+							{
+								bone = "bip_hand_L"
+								weight = 0.0
+							},
+							{
+								bone = "bip_index_0_L"
+								weight = 0.0
+							},
+							{
+								bone = "bip_index_0_R"
+								weight = 0.0
+							},
+							{
+								bone = "bip_middle_0_L"
+								weight = 0.0
+							},
+							{
+								bone = "bip_middle_0_R"
+								weight = 0.0
+							},
+							{
+								bone = "bip_pinky_0_L"
+								weight = 0.0
+							},
+							{
+								bone = "bip_pinky_0_R"
+								weight = 0.0
+							},
+							{
+								bone = "bip_ring_0_L"
+								weight = 0.0
+							},
+							{
+								bone = "bip_ring_0_R"
+								weight = 0.0
+							},
+							{
+								bone = "bip_thumb_0_L"
+								weight = 0.0
+							},
+							{
+								bone = "bip_thumb_0_R"
+								weight = 0.0
+							},
+							{
+								bone = "bip_upperArm_L"
+								weight = 0.0
+							},
+							{
+								bone = "bip_upperArm_R"
+								weight = 1.0
+							},
+							{
+								bone = "finger_index_meta_R"
+								weight = 0.0
+							},
+							{
+								bone = "finger_middle_meta_R"
+								weight = 0.0
+							},
+							{
+								bone = "finger_ring_meta_R"
+								weight = 0.0
+							},
+							{
+								bone = "finger_thumb_0_R"
+								weight = 0.0
+							},
+							{
+								bone = "hand_R"
+								weight = 1.0
+							},
+						]
+						master_morph_weight = -1.0
+						morph_weights = [  ]
+					},
+					{
+						_class = "WeightList"
+						name = "Pinky_R"
+						default_weight = 0.0
+						weights = 
+						[
+							{
+								bone = "bip_pinky_0_L"
+								weight = 0.0
+							},
+							{
+								bone = "bip_pinky_0_R"
+								weight = 1.0
+							},
+						]
+						master_morph_weight = -1.0
+						morph_weights = [  ]
+					},
+				]
+			},
+			{
+				_class = "AnimationList"
+				children = 
+				[
+					{
+						_class = "AnimFile"
+						name = "left_close"
+						activity_name = ""
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "models/spartans/spartanhands/left_close.dmx"
+						start_frame = -1
+						end_frame = 60
+						framerate = -1.0
+						take = 0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "left_close2"
+						activity_name = ""
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "models/spartans/spartanhands/left_close2.dmx"
+						start_frame = -1
+						end_frame = 60
+						framerate = -1.0
+						take = 0
+						reverse = false
+					},
+				]
+				default_root_bone_name = ""
+			},
 		]
 		model_archetype = ""
 		primary_associated_entity = ""
-		anim_graph_name = "animgraphs/hands/handright.vanmgrph"
+		anim_graph_name = "animgraphs/hands/spartanhands.vanmgrph"
 	}
 }

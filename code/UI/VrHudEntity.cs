@@ -30,7 +30,7 @@ namespace HBB
 				WorldScale = 0.1f;
 				Scale = 2.0f;
 
-				PanelBounds = new Rect( 0, 0, 1920, 1080 );
+				PanelBounds = new Rect( 0, 0, 1920, 500 );
 			}
 		}
 	}

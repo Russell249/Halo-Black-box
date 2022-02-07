@@ -26,30 +26,26 @@ namespace HBB
 
 		public override void Respawn()
 		{
-			SetModel( "models/spartans/haloreachspartans.vmdl" );
+			// SetModel( "models/spartans/haloreachspartans.vmdl" );
 
-			if ( Client.IsUsingVr )
-			{
-				Controller = new VrWalkController();
-				Animator = new VrPlayerAnimator();
-				Camera = new VrCamera();
-			}
-			else
-			{
-				Controller = new WalkController();
-				Animator = new StandardPlayerAnimator();
-				Camera = new FirstPersonCamera();
-			}
+			// if ( Client.IsUsingVr )
+			// {
+			Controller = new VrWalkController();
+			Animator = new VrPlayerAnimator();
+			Camera = new VrCamera();
+			// }
 
 			EnableAllCollisions = true;
 			EnableDrawing = true;
-			EnableHideInFirstPerson = true;
+			// EnableHideInFirstPerson = true;
 			EnableShadowInFirstPerson = true;
+
+			SetModel("models/spartans/spartanhands/spartan_hands.vmdl");
 
 			CreateHands();
 
-			if ( Client.IsUsingVr )
-				SetBodyGroup( "Hands", 1 ); // Hide hands
+			// if ( Client.IsUsingVr )
+			// 	SetBodyGroup( "Hands", 1 ); // Hide hands
 
 			base.Respawn();
 		}
@@ -66,6 +62,8 @@ namespace HBB
 
 			CheckRotate();
 			SetVrAnimProperties();
+
+			// SetAnimVector("")
 
 			LeftHand?.Simulate( cl );
 			RightHand?.Simulate( cl );
@@ -92,11 +90,13 @@ namespace HBB
 			var rightHandLocal = Transform.ToLocal( RightHand.GetBoneTransform( 0 ) );
 
 			var handOffset = Vector3.Zero;
-			SetAnimVector( "left_hand_ik.position", leftHandLocal.Position + (handOffset * leftHandLocal.Rotation) );
-			SetAnimVector( "right_hand_ik.position", rightHandLocal.Position + (handOffset * rightHandLocal.Rotation) );
+			SetAnimVector( "left_hand_pos", RightHand.Position);
+			SetAnimVector( "right_hand_pos", RightHand.Position);
+			// SetAnimVector("right_arm_pos", Input.VR.Head.Position);
 
-			SetAnimRotation( "left_hand_ik.rotation", leftHandLocal.Rotation * Rotation.From( 0, 0, 180 ) );
-			SetAnimRotation( "right_hand_ik.rotation", rightHandLocal.Rotation );
+			SetAnimRotation( "left_hand_rot", leftHandLocal.Rotation * Rotation.From( 0, 0, 270 ) );
+			SetAnimRotation( "right_hand_rot", rightHandLocal.Rotation );
+			// SetAnimRotation("right_arm_rot", Input.VR.Head.Rotation);
 
 			float height = Input.VR.Head.Position.z - Position.z;
 			SetAnimFloat( "duck", 1.0f - ((height - 32f) / 32f) ); // This will probably need tweaking depending on height

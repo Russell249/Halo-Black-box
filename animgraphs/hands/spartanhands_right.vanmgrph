@@ -470,7 +470,7 @@
 				m_sNote = ""
 				m_childID = 
 				{
-					m_id = 1165453271
+					m_id = 770235078
 				}
 			}
 		},
@@ -775,7 +775,7 @@
 				{
 					m_id = 872552154
 				}
-				m_bMatchTargetOrientation = false
+				m_bMatchTargetOrientation = true
 				m_rotationParam = 
 				{
 					m_id = 1446484518
