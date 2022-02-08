@@ -312,7 +312,7 @@
 				}
 				m_networkMode = "ClientPredicted"
 				m_sNote = ""
-				m_sequenceName = "left_close2"
+				m_sequenceName = "left_close"
 				m_nFrameIndex = 20
 				m_tagSpans = [  ]
 			}
@@ -585,7 +585,7 @@
 				}
 				m_networkMode = "ClientPredicted"
 				m_sNote = ""
-				m_sequenceName = "left_close2"
+				m_sequenceName = "left_close"
 				m_nFrameIndex = 0
 				m_tagSpans = [  ]
 			}
@@ -606,7 +606,7 @@
 				}
 				m_networkMode = "ClientPredicted"
 				m_sNote = ""
-				m_sequenceName = "left_close2"
+				m_sequenceName = "left_close"
 				m_nFrameIndex = 20
 				m_tagSpans = [  ]
 			}
@@ -664,7 +664,7 @@
 				}
 				m_networkMode = "ClientPredicted"
 				m_sNote = ""
-				m_sequenceName = "left_close2"
+				m_sequenceName = "left_close"
 				m_nFrameIndex = 20
 				m_tagSpans = [  ]
 			}
@@ -685,7 +685,7 @@
 				}
 				m_networkMode = "ClientPredicted"
 				m_sNote = ""
-				m_sequenceName = "left_close2"
+				m_sequenceName = "left_close"
 				m_nFrameIndex = 0
 				m_tagSpans = [  ]
 			}
@@ -849,7 +849,7 @@
 				}
 				m_networkMode = "ClientPredicted"
 				m_sNote = ""
-				m_sequenceName = "left_close2"
+				m_sequenceName = "left_close"
 				m_nFrameIndex = 20
 				m_tagSpans = [  ]
 			}
@@ -870,7 +870,7 @@
 				}
 				m_networkMode = "ClientPredicted"
 				m_sNote = ""
-				m_sequenceName = "left_close2"
+				m_sequenceName = "left_close"
 				m_nFrameIndex = 0
 				m_tagSpans = [  ]
 			}
@@ -891,7 +891,7 @@
 				}
 				m_networkMode = "ClientPredicted"
 				m_sNote = ""
-				m_sequenceName = "left_close2"
+				m_sequenceName = "left_close"
 				m_nFrameIndex = 20
 				m_tagSpans = [  ]
 			}
@@ -912,7 +912,7 @@
 				}
 				m_networkMode = "ClientPredicted"
 				m_sNote = ""
-				m_sequenceName = "left_close2"
+				m_sequenceName = "left_close"
 				m_nFrameIndex = 0
 				m_tagSpans = [  ]
 			}
@@ -1043,7 +1043,7 @@
 				}
 				m_networkMode = "ClientPredicted"
 				m_sNote = ""
-				m_sequenceName = "left_close2"
+				m_sequenceName = "left_close"
 				m_nFrameIndex = 0
 				m_tagSpans = [  ]
 			}
@@ -1064,7 +1064,7 @@
 				}
 				m_networkMode = "ClientPredicted"
 				m_sNote = ""
-				m_sequenceName = "left_close2"
+				m_sequenceName = "left_close"
 				m_nFrameIndex = 0
 				m_tagSpans = [  ]
 			}

@@ -14,28 +14,12 @@
 						remaps = 
 						[
 							{
-								from = "spartan_armor.vmat"
-								to = "materials/spartan/spartan_armor_aqua.vmat"
-							},
-							{
 								from = "spartan_fp_armor.vmat"
 								to = "materials/spartan/spartan_arms_aqua.vmat"
 							},
 							{
 								from = "spartan_fp_glove.vmat"
 								to = "materials/spartan/spartan_gloves.vmat"
-							},
-							{
-								from = "spartan_rubber_suit.vmat"
-								to = "materials/spartan/spartan_rubber_suit.vmat"
-							},
-							{
-								from = "unsc_decals.vmat"
-								to = "materials/spartan/unsc_decals_diffuse.vmat"
-							},
-							{
-								from = "spartan_shield_display.vmat"
-								to = "materials/spartan/empty.vmat"
 							},
 						]
 						use_global_default = false
@@ -258,6 +242,39 @@
 					},
 				]
 				default_root_bone_name = ""
+			},
+			{
+				_class = "ModelDataList"
+				children = 
+				[
+					{
+						_class = "Bounds View"
+						mins = [ 4.097581, 13.720983, -23.816307 ]
+						maxs = [ 14.244, 21.06658, -12.835242 ]
+					},
+					{
+						_class = "Bounds Hull"
+						mins = [ 2.433802, 13.987322, -24.204948 ]
+						maxs = [ 14.433802, 21.987322, -12.204947 ]
+					},
+				]
+			},
+			{
+				_class = "PhysicsShapeList"
+				children = 
+				[
+					{
+						_class = "PhysicsHullFromRender"
+						parent_bone = "bip_hand_L"
+						surface_prop = "default"
+						collision_group = ""
+						collision_interact_as = ""
+						collision_interact_with = ""
+						collision_interact_exclude = ""
+						faceMergeAngle = 20.0
+						maxHullVertices = 32
+					},
+				]
 			},
 		]
 		model_archetype = ""

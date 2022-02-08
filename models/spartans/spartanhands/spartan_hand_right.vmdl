@@ -14,28 +14,12 @@
 						remaps = 
 						[
 							{
-								from = "spartan_armor.vmat"
-								to = "materials/spartan/spartan_armor_aqua.vmat"
-							},
-							{
 								from = "spartan_fp_armor.vmat"
 								to = "materials/spartan/spartan_arms_aqua.vmat"
 							},
 							{
 								from = "spartan_fp_glove.vmat"
 								to = "materials/spartan/spartan_gloves.vmat"
-							},
-							{
-								from = "spartan_rubber_suit.vmat"
-								to = "materials/spartan/spartan_rubber_suit.vmat"
-							},
-							{
-								from = "unsc_decals.vmat"
-								to = "materials/spartan/unsc_decals_diffuse.vmat"
-							},
-							{
-								from = "spartan_shield_display.vmat"
-								to = "materials/spartan/empty.vmat"
 							},
 						]
 						use_global_default = false
@@ -308,102 +292,6 @@
 				default_root_bone_name = ""
 			},
 			{
-				_class = "IKData"
-				children = 
-				[
-					{
-						_class = "IKChain"
-						name = "right_hand_ik"
-						children = 
-						[
-							{
-								_class = "IKChainJoint"
-								name = "bip_upperArm_R"
-								children = 
-								[
-									{
-										_class = "IKChainJoint"
-										name = "bip_lowerArm_R"
-										children = 
-										[
-											{
-												_class = "IKChainJoint"
-												name = "bip_hand_R"
-												bone = "bip_hand_R"
-											},
-										]
-										bone = "bip_lowerArm_R"
-									},
-								]
-								bone = "bip_upperArm_R"
-							},
-						]
-						m_bDoBonesOrientAlongPositiveX = true
-						"m_DefaultSolverSettings.m_nNumIterations" = 6
-						"m_DefaultSolverSettings.m_SolverType " = "IKSOLVER_TwoBone"
-						"m_DefaultTargetSettings.m_Bone" = 
-						{
-							m_Name = "bip_hand_R"
-						}
-						"m_DefaultTargetSettings.m_TargetSource" = "Bone"
-						"m_Data.m_DefaultTargetSettings.m_AnimgraphParameterNamePosition" = 
-						{
-							m_id = 4294967295
-						}
-						"m_Data.m_EndEffectorFixedOffsetAttachment" = 
-						{
-							m_Name = ""
-						}
-						"m_Data.m_bParentJointRequiresAlignment" = true
-					},
-					{
-						_class = "IKChain"
-						name = "right_arm_ik"
-						children = 
-						[
-							{
-								_class = "IKChainJoint"
-								name = "bip_upperArm_R1"
-								children = 
-								[
-									{
-										_class = "IKChainJoint"
-										name = "bip_lowerArm_R1"
-										children = 
-										[
-											{
-												_class = "IKChainJoint"
-												name = "bip_hand_R1"
-												bone = "bip_hand_R"
-											},
-										]
-										bone = "bip_lowerArm_R"
-									},
-								]
-								bone = "bip_upperArm_R"
-							},
-						]
-						m_bDoBonesOrientAlongPositiveX = true
-						"m_DefaultSolverSettings.m_nNumIterations" = 6
-						"m_DefaultSolverSettings.m_SolverType " = "IKSOLVER_TwoBone"
-						"m_DefaultTargetSettings.m_Bone" = 
-						{
-							m_Name = "bip_upperArm_R"
-						}
-						"m_DefaultTargetSettings.m_TargetSource" = "Bone"
-						"m_Data.m_DefaultTargetSettings.m_AnimgraphParameterNamePosition" = 
-						{
-							m_id = 4294967295
-						}
-						"m_Data.m_EndEffectorFixedOffsetAttachment" = 
-						{
-							m_Name = ""
-						}
-						"m_Data.m_bParentJointRequiresAlignment" = true
-					},
-				]
-			},
-			{
 				_class = "PhysicsShapeList"
 				children = 
 				[
@@ -432,6 +320,22 @@
 						relative_angles = [ 0.0, 0.0, 0.0 ]
 						weight = 1.0
 						ignore_rotation = false
+					},
+				]
+			},
+			{
+				_class = "ModelDataList"
+				children = 
+				[
+					{
+						_class = "Bounds View"
+						mins = [ 4.097581, -21.397533, -23.816307 ]
+						maxs = [ 14.244, -14.051935, -12.835242 ]
+					},
+					{
+						_class = "Bounds Hull"
+						mins = [ 3.278561, -22.317854, -24.689959 ]
+						maxs = [ 15.278561, -14.317854, -12.689957 ]
 					},
 				]
 			},

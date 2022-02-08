@@ -4,7 +4,7 @@ namespace HBB
 {
 	public class RightHand : BaseHand
 	{
-		// protected override string ModelPath => "models/spartans/spartanhands/spartan_hand_right.vmdl";
+		protected override string ModelPath => "models/spartans/spartanhands/spartan_hand_right.vmdl";
 		public override Input.VrHand InputHand => Input.VR.RightHand;
 
 		public override void Spawn()

@@ -213,6 +213,7 @@
 	m_previewModels = 
 	[
 		"models/spartans/spartanhands/spartan_hands.vmdl",
+		"models/spartans/spartanhands/spartan_hand_left.vmdl",
 	]
 	m_nodes = 
 	[

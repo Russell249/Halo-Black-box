@@ -22,10 +22,6 @@
 								to = "materials/spartan/spartan_arms_aqua.vmat"
 							},
 							{
-								from = "spartan_fp_glove.vmat"
-								to = "materials/spartan/spartan_gloves.vmat"
-							},
-							{
 								from = "spartan_rubber_suit.vmat"
 								to = "materials/spartan/spartan_rubber_suit.vmat"
 							},
@@ -82,14 +78,6 @@
 									{
 										_class = "IKChainJoint"
 										name = "bip_lowerArm_R"
-										children = 
-										[
-											{
-												_class = "IKChainJoint"
-												name = "bip_hand_R"
-												bone = "bip_hand_R"
-											},
-										]
 										bone = "bip_lowerArm_R"
 									},
 								]
@@ -101,7 +89,7 @@
 						"m_DefaultSolverSettings.m_SolverType " = "IKSOLVER_TwoBone"
 						"m_DefaultTargetSettings.m_Bone" = 
 						{
-							m_Name = "bip_hand_R"
+							m_Name = "bip_lowerArm_R"
 						}
 						"m_DefaultTargetSettings.m_TargetSource" = "Bone"
 						"m_Data.m_DefaultTargetSettings.m_AnimgraphParameterNamePosition" = 
@@ -127,14 +115,6 @@
 									{
 										_class = "IKChainJoint"
 										name = "lowerArm_L"
-										children = 
-										[
-											{
-												_class = "IKChainJoint"
-												name = "hand_L"
-												bone = "bip_hand_L"
-											},
-										]
 										bone = "bip_lowerArm_L"
 									},
 								]
@@ -146,7 +126,7 @@
 						"m_DefaultSolverSettings.m_SolverType " = "IKSOLVER_TwoBone"
 						"m_DefaultTargetSettings.m_Bone" = 
 						{
-							m_Name = "bip_hand_L"
+							m_Name = "bip_lowerArm_L"
 						}
 						"m_DefaultTargetSettings.m_TargetSource" = "Bone"
 						"m_Data.m_DefaultTargetSettings.m_AnimgraphParameterNamePosition" = 
@@ -382,34 +362,6 @@
 						morph_weights = [  ]
 					},
 				]
-			},
-			{
-				_class = "AnimationList"
-				children = 
-				[
-					{
-						_class = "AnimFile"
-						name = "left_close"
-						activity_name = ""
-						activity_weight = 1
-						weight_list_name = ""
-						fade_in_time = 0.2
-						fade_out_time = 0.2
-						looping = false
-						delta = false
-						worldSpace = false
-						hidden = false
-						anim_markup_ordered = false
-						disable_compression = false
-						source_filename = "models/spartans/spartanhands/left_close.dmx"
-						start_frame = -1
-						end_frame = 60
-						framerate = -1.0
-						take = 0
-						reverse = false
-					},
-				]
-				default_root_bone_name = ""
 			},
 		]
 		model_archetype = ""
