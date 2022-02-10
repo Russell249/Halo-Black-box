@@ -28,12 +28,18 @@ namespace HBB
 		{
 			// SetModel( "models/spartans/haloreachspartans.vmdl" );
 
-			// if ( Client.IsUsingVr )
-			// {
-			Controller = new VrWalkController();
-			Animator = new VrPlayerAnimator();
-			Camera = new VrCamera();
-			// }
+			if ( Client.IsUsingVr )
+			{
+				Controller = new VrWalkController();
+				Animator = new VrPlayerAnimator();
+				Camera = new VrCamera();
+			}
+			else 
+			{
+				Controller = new WalkController();
+				Animator = new StandardPlayerAnimator();
+				Camera = new FirstPersonCamera();
+			}
 
 			EnableAllCollisions = true;
 			EnableDrawing = true;
