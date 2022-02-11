@@ -12424,7 +12424,7 @@
 						name = "forward"
 						parent_bone = "b_head"
 						relative_origin = [ 0.0, 0.0, 0.0 ]
-						relative_angles = [ 0.0, 0.0, 0.0 ]
+						relative_angles = [ 0.0, 90.0, 0.0 ]
 						weight = 1.0
 						ignore_rotation = false
 					},
@@ -12590,6 +12590,54 @@
 								hitbox_maxs = [ 2.801244, 4.478742, 4.394182 ]
 							},
 						]
+					},
+				]
+			},
+			{
+				_class = "GameDataList"
+				children = 
+				[
+					{
+						_class = "LookAtChain"
+						name = "AimChain"
+						lookat_chain = 
+						{
+							name = ""
+							bones = 
+							[
+								{
+									name = "b_spine2"
+									weight = 1.0
+								},
+								{
+									name = "b_spine1"
+									weight = 0.7
+								},
+								{
+									name = "b_pelvis"
+									weight = 0.2
+								},
+							]
+						}
+					},
+					{
+						_class = "LookAtChain"
+						name = "LookChain"
+						lookat_chain = 
+						{
+							name = ""
+							bones = 
+							[
+								{
+									name = "b_head"
+									weight = 0.6
+								},
+								{
+									name = "b_neck1"
+									weight = 0.35
+								},
+							]
+						}
 					},
 				]
 			},

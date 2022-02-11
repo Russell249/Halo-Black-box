@@ -12,6 +12,8 @@ public partial class NpcBase : AnimEntity
 	NavPath Path = new NavPath();
 	public NavSteer Steer;
 
+	public Entity target;
+
 	public override void Spawn()
 	{
 		base.Spawn();
@@ -32,14 +34,86 @@ public partial class NpcBase : AnimEntity
 
 		// this.SetMaterialGroup(Rand.Int)
 
-		Speed = Rand.Float(100, 300);
+		Speed = Rand.Float(200, 250);
+	}
+
+	public override void OnKilled()
+	{
+		base.OnKilled();
+
+		BecomeRagdollOnClient();
+	}
+
+	public State CurrentState;
+
+	public void StartWander() 
+	{
+		CurrentState = State.Wander;
+		
+		var wander = new Sandbox.Nav.Wander();
+		wander.MinRadius = 50;
+		wander.MaxRadius = 250;
+		Steer = wander;
+	}
+
+	public void StartChase() 
+	{
+		if (CurrentState == State.Chase)
+			return;
+
+		CurrentState = State.Chase;
+		
+		if (!target.IsValid()) FindTarget();
+		if (target.Health < 0) FindTarget();
+		Steer = new NavSteer();
+		Steer.Target = target.Position;
+
+		var tr = Sandbox.Trace.Ray(Position, Position)
+					.UseHitboxes()
+					.Ignore(Owner)
+					.Ignore(this)
+					.Size(2)
+					.Run();
+	}
+
+	public void StartChase(Entity targ) 
+	{
+		target = targ;
+		if (CurrentState == State.Chase)
+			return;
+
+		CurrentState = State.Chase;
+		
+		if (!target.IsValid()) FindTarget();
+		if (target.Health <= 0) FindTarget();
+		Steer = new NavSteer();
+		Steer.Target = target.Position;
+
+		var tr = Sandbox.Trace.Ray(Position, Position)
+					.UseHitboxes()
+					.Ignore(Owner)
+					.Ignore(this)
+					.Size(2)
+					.Run();
+	}
+
+	public void FindTarget() 
+	{
+		target = Entity.All
+			.OfType<Player>()
+			.FirstOrDefault();
+
+		if (target == null)
+		{
+			Log.Warning($"{this} hasn't found a target!");
+		}
 	}
 
 	Vector3 InputVelocity;
 	Vector3 LookDir;
 
 	[Event.Tick.Server]
-	public void Tick() 
+	public virtual void Tick() 
 	{
 		using var _a = Sandbox.Debug.Profile.Scope("NpcBase::Tick");
 
@@ -74,7 +148,7 @@ public partial class NpcBase : AnimEntity
 		var animHelper = new AnimationHelper(this);
 
 		LookDir = Vector3.Lerp(LookDir, InputVelocity.WithZ(0) * 1000, Time.Delta * 100.0f);
-		animHelper.WithLookAt(EyePos + LookDir);
+		// animHelper.WithLookAt(EyePos + LookDir);
 		animHelper.WithVelocity(Velocity);
 		animHelper.WithWishVelocity(InputVelocity);
 	}
@@ -131,4 +205,10 @@ public partial class NpcBase : AnimEntity
 		Position = move.Position;
 		Velocity = move.Velocity;
 	}
+}
+
+public enum State 
+{
+	Wander,
+	Chase
 }

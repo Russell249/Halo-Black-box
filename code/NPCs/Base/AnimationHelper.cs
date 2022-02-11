@@ -12,12 +12,12 @@ public struct AnimationHelper
 		Owner = entity;
 	}
 
-	public void WithLookAt(Vector3 look) 
-	{
-		Owner.SetAnimLookAt("aim_head", look);
-		Owner.SetAnimLookAt("aim_body", look);
-		Owner.SetAnimFloat("aimat_weight", 0.5f);
-	}
+	// public void WithLookAt(Vector3 look) 
+	// {
+	// 	Owner.SetAnimLookAt("aim_head", look);
+	// 	Owner.SetAnimLookAt("aim_body", look);
+	// 	Owner.SetAnimFloat("aimat_weight", 0.1f);
+	// }
 
 	public void WithVelocity(Vector3 Velocity) 
 	{
