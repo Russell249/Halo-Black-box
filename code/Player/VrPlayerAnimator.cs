@@ -22,7 +22,7 @@ namespace HBB
 			SetParam( "b_sit", sitting );
 			SetParam( "b_swim", Pawn.WaterLevel.Fraction > 0.5f && !sitting );
 
-			Vector3 aimPos = Pawn.EyePos + Rotation.Forward * 256;
+			Vector3 aimPos = Pawn.EyePosition + Rotation.Forward * 256;
 			Vector3 lookPos = Input.VR.Head.Position + Input.VR.Head.Rotation.Forward * 256;
 
 			//

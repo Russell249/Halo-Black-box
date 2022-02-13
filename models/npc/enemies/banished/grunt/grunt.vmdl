@@ -12443,7 +12443,7 @@
 								_class = "Hitbox"
 								name = "b_r_thigh"
 								parent_bone = "b_r_thigh"
-								surface_property = ""
+								surface_property = "flesh"
 								translation_only = false
 								group_id = 0
 								hitbox_mins = [ -0.5, -4.138268, -2.885424 ]
@@ -12453,7 +12453,7 @@
 								_class = "Hitbox"
 								name = "b_r_calf"
 								parent_bone = "b_r_calf"
-								surface_property = ""
+								surface_property = "flesh"
 								translation_only = false
 								group_id = 0
 								hitbox_mins = [ -2.799048, -4.513206, -4.342602 ]
@@ -12463,7 +12463,7 @@
 								_class = "Hitbox"
 								name = "b_spine1"
 								parent_bone = "b_spine1"
-								surface_property = ""
+								surface_property = "flesh"
 								translation_only = false
 								group_id = 0
 								hitbox_mins = [ -3.113163, -7.47261, -9.51675 ]
@@ -12473,9 +12473,9 @@
 								_class = "Hitbox"
 								name = "b_spine2"
 								parent_bone = "b_spine2"
-								surface_property = ""
+								surface_property = "metal"
 								translation_only = false
-								group_id = 0
+								group_id = 10
 								hitbox_mins = [ -1.684574, -1.633503, -9.950766 ]
 								hitbox_maxs = [ 17.473919, 29.804976, 10.012741 ]
 							},
@@ -12483,7 +12483,7 @@
 								_class = "Hitbox"
 								name = "b_neck1"
 								parent_bone = "b_neck1"
-								surface_property = ""
+								surface_property = "flesh"
 								translation_only = false
 								group_id = 0
 								hitbox_mins = [ -0.5, -7.271785, -3.192919 ]
@@ -12493,7 +12493,7 @@
 								_class = "Hitbox"
 								name = "b_r_clav"
 								parent_bone = "b_r_clav"
-								surface_property = ""
+								surface_property = "flesh"
 								translation_only = false
 								group_id = 0
 								hitbox_mins = [ -1.911541, -0.5, -0.5 ]
@@ -12503,7 +12503,7 @@
 								_class = "Hitbox"
 								name = "b_r_upperarm"
 								parent_bone = "b_r_upperarm"
-								surface_property = ""
+								surface_property = "flesh"
 								translation_only = false
 								group_id = 0
 								hitbox_mins = [ -0.5, -2.725101, -4.447103 ]
@@ -12513,7 +12513,7 @@
 								_class = "Hitbox"
 								name = "b_r_forearm"
 								parent_bone = "b_r_forearm"
-								surface_property = ""
+								surface_property = "flesh"
 								translation_only = false
 								group_id = 0
 								hitbox_mins = [ -1.978642, -4.537515, -3.908485 ]
@@ -12523,7 +12523,7 @@
 								_class = "Hitbox"
 								name = "b_r_hand"
 								parent_bone = "b_r_hand"
-								surface_property = ""
+								surface_property = "flesh"
 								translation_only = false
 								group_id = 0
 								hitbox_mins = [ -5.832455, -6.844719, -3.63075 ]
@@ -12533,7 +12533,7 @@
 								_class = "Hitbox"
 								name = "b_l_clav"
 								parent_bone = "b_l_clav"
-								surface_property = ""
+								surface_property = "flesh"
 								translation_only = false
 								group_id = 0
 								hitbox_mins = [ -0.5, -0.5, -5.178348 ]
@@ -12543,7 +12543,7 @@
 								_class = "Hitbox"
 								name = "b_l_upperarm"
 								parent_bone = "b_l_upperarm"
-								surface_property = ""
+								surface_property = "flesh"
 								translation_only = false
 								group_id = 0
 								hitbox_mins = [ -8.345249, -3.229489, -2.728829 ]
@@ -12553,7 +12553,7 @@
 								_class = "Hitbox"
 								name = "b_l_forearm"
 								parent_bone = "b_l_forearm"
-								surface_property = ""
+								surface_property = "flesh"
 								translation_only = false
 								group_id = 0
 								hitbox_mins = [ -21.551529, -4.053381, -3.288455 ]
@@ -12563,7 +12563,7 @@
 								_class = "Hitbox"
 								name = "b_l_hand"
 								parent_bone = "b_l_hand"
-								surface_property = ""
+								surface_property = "flesh"
 								translation_only = false
 								group_id = 0
 								hitbox_mins = [ -8.120666, -4.053349, -3.288596 ]
@@ -12573,7 +12573,7 @@
 								_class = "Hitbox"
 								name = "b_l_thigh"
 								parent_bone = "b_l_thigh"
-								surface_property = ""
+								surface_property = "flesh"
 								translation_only = false
 								group_id = 0
 								hitbox_mins = [ -8.364391, -2.465272, -3.499383 ]
@@ -12583,7 +12583,7 @@
 								_class = "Hitbox"
 								name = "b_l_calf"
 								parent_bone = "b_l_calf"
-								surface_property = ""
+								surface_property = "flesh"
 								translation_only = false
 								group_id = 0
 								hitbox_mins = [ -8.157367, -2.543988, -3.396234 ]

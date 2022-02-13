@@ -7,6 +7,11 @@ namespace HBB
 		[Net, Local] public LeftHand LeftHand { get; set; }
 		[Net, Local] public RightHand RightHand { get; set; }
 
+		public HBBPlayer()
+		{
+			Inventory = new BaseInventory(this);
+		}
+
 		private void CreateHands()
 		{
 			DeleteHands();
@@ -40,6 +45,8 @@ namespace HBB
 				Animator = new StandardPlayerAnimator();
 				Camera = new FirstPersonCamera();
 			}
+
+			Inventory.Add(new NoVrTestWeapon(), true);
 
 			EnableAllCollisions = true;
 			EnableDrawing = true;

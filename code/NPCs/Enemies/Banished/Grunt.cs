@@ -1,6 +1,6 @@
 using Sandbox;
 using System;
-using System.Diagnostics;
+// using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
@@ -9,14 +9,35 @@ using System.Collections.Generic;
 [Library("grunt", Title = "Grunt", Spawnable = true)]
 partial class Grunt : NpcBase 
 {
+	float Speed;
+
+	[ServerCmd("spawn_grunt")]
+	private static void SpawnEntity() 
+	{
+		foreach (var ply in Entity.All.OfType<HBB.HBBPlayer>().ToArray()) 
+		{
+			var startPos = ply.EyePosition;
+			var dir = ply.EyeRotation.Forward;
+			var tr = Trace.Ray(startPos, startPos + dir * 5000)
+						.Ignore(ply)
+						.Run();
+
+			var npc = new Grunt 
+			{
+				Position = tr.EndPos,
+				Rotation = Rotation.LookAt(ply.EyeRotation.Backward.WithZ(0))
+			};
+		}
+	}
+
 	public override void Spawn()
 	{
 		base.Spawn();
 
 		SetModel("models/npc/enemies/banished/grunt/grunt.vmdl");
-		EyePos = Position + Vector3.Up * 64;
+		EyePosition = Position + Vector3.Up * 64;
 		CollisionGroup = CollisionGroup.Player;
-		SetupPhysicsFromCapsule(PhysicsMotionType.Keyframed, Capsule.FromHeightAndRadius(72, 2));
+		SetupPhysicsFromCapsule(PhysicsMotionType.Keyframed, Capsule.FromHeightAndRadius(48, 5));
 
 		EnableHitboxes = true;
 
@@ -45,6 +66,13 @@ partial class Grunt : NpcBase
 		this.Steer = new Sandbox.Nav.Wander();
 	}
 
+	public override void TakeDamage( DamageInfo info )
+	{
+		base.TakeDamage( info );
+
+		CurrentState = State.Scared;
+	}
+
 	public override void OnKilled()
 	{
 		PlaySound("grunt.death");
@@ -69,6 +97,36 @@ partial class Grunt : NpcBase
 				Steer = new NavSteer();
 				Steer.Target = target.Position;
 			}
+
+			if (TimeUntilAttack <= 0) 
+			{
+				if (!target.IsValid()) FindTarget();
+				if (target.Health <= 0) FindTarget();
+
+				if (Rand.Int(3) == 1 && Vector3.DistanceBetween(Position, target.Position) < 100) 
+				{
+					Steer = new NavSteer();
+					Steer.Target = target.Position;
+				}
+
+				if (Rand.Int(3) == 1 && Vector3.DistanceBetween(Position, target.Position) < 80) 
+				{
+					// Attack stuff
+					TimeUntilAttack = 60;
+				}
+			}
+
+			else 
+			{
+				TimeUntilAttack -= 1;
+			}
+		}
+
+		if (CurrentState == State.Scared) 
+		{
+			Steer = new Sandbox.Nav.Wander();
+
+			Speed = 300f;
 		}
 
 		base.Tick();

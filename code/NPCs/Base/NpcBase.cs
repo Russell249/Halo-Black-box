@@ -7,10 +7,21 @@ using System.Threading.Tasks;
 [Library("npc_base", Title = "Base NPC", Spawnable = false)]
 public partial class NpcBase : AnimEntity 
 {
+	[ServerCmd("npc_clear")]
+	public static void NpcClear() 
+	{
+		foreach (var npc in Entity.All.OfType<NpcBase>().ToArray())
+			npc.Delete();
+	}
+
 	float Speed;
 
 	NavPath Path = new NavPath();
 	public NavSteer Steer;
+
+	private DamageInfo lastDamage;
+
+	public float TimeUntilAttack = 0;
 
 	public Entity target;
 
@@ -26,7 +37,7 @@ public partial class NpcBase : AnimEntity
 		npc.Steer = wander;
 
 		SetModel("models/npc/enemies/banished/grunt/grunt.vmdl");
-		EyePos = Position + Vector3.Up * 64;
+		EyePosition = Position + Vector3.Up * 64;
 		CollisionGroup = CollisionGroup.Player;
 		SetupPhysicsFromCapsule(PhysicsMotionType.Keyframed, Capsule.FromHeightAndRadius(72, 8));
 
@@ -37,11 +48,40 @@ public partial class NpcBase : AnimEntity
 		Speed = Rand.Float(200, 250);
 	}
 
+	public override void TakeDamage( DamageInfo info )
+	{
+		base.TakeDamage( info );
+
+		target = info.Attacker;
+		if (CurrentState == State.Wander) 
+		{
+			StartChase(target);
+		}
+		else 
+		{
+			if (Rand.Int(5) == 1)
+				target = info.Attacker;
+		}
+
+		var AngerRange = 250;
+		var overlaps = Physics.GetEntitiesInSphere(Position, AngerRange);
+
+		foreach (var overlap in overlaps.OfType<NpcBase>().ToArray()) 
+		{
+			if (Rand.Int(5) == 1)
+				overlap.StartChase(target);
+		}
+
+		Velocity /= 10;
+	}
+
 	public override void OnKilled()
 	{
 		base.OnKilled();
 
-		BecomeRagdollOnClient();
+		BecomeRagdollOnClient(Velocity, lastDamage.Flags, lastDamage.Position, lastDamage.Force, GetHitboxBone(lastDamage.HitboxIndex));
+		
+		// BecomeRagdollOnClient();
 	}
 
 	public State CurrentState;
@@ -210,5 +250,6 @@ public partial class NpcBase : AnimEntity
 public enum State 
 {
 	Wander,
-	Chase
+	Chase,
+	Scared
 }
