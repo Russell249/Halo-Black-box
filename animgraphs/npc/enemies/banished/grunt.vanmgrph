@@ -984,7 +984,7 @@
 						m_name = "Base"
 						m_childNodeID = 
 						{
-							m_id = 4294967295
+							m_id = 119669509
 						}
 						m_stateID = 
 						{
@@ -1045,7 +1045,7 @@
 						m_name = "Jump"
 						m_childNodeID = 
 						{
-							m_id = 4294967295
+							m_id = 491334036
 						}
 						m_stateID = 
 						{
@@ -1194,7 +1194,7 @@
 			{
 				_class = "CSequenceAnimNode"
 				m_sName = "Unnamed"
-				m_vecPosition = [ -48.0, -48.0 ]
+				m_vecPosition = [ -32.0, -64.0 ]
 				m_nNodeID = 
 				{
 					m_id = 491334036

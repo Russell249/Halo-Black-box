@@ -1,5 +1,5 @@
 using Sandbox;
-
+using System.Linq;
 partial class NpcBase 
 {
 	static EntityLimit RagdollLimit = new EntityLimit {MaxTotal = 20};
@@ -56,6 +56,12 @@ partial class NpcBase
 		// ent.DeleteAsync( 20.0f );
 
 		ent.RenderColor = RenderColor;
+
+		foreach (var ply in Entity.All.OfType<Player>()) 
+		{
+			if (Vector3.DistanceBetween(ply.Position, Position) > 4500)
+				ent.Delete();
+		}
 
 		// RagdollLimit.Watch(ent);
 	}

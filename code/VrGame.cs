@@ -8,7 +8,7 @@ namespace HBB
 		{
 			if ( IsServer )
 			{
-				_ = new ExampleHudEntity();
+				_ = new HBBHud();
 			}
 		}
 
