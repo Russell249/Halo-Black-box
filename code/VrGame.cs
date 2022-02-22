@@ -6,7 +6,7 @@ namespace HBB
 	{
 		public HBBGame()
 		{
-			if ( IsServer )
+			if ( IsClient )
 			{
 				_ = new HBBHud();
 			}

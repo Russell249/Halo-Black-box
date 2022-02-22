@@ -9,7 +9,7 @@ public partial class HBBHud : HudEntity<RootPanel>
 	public HBBHud() 
 	{
 		Instance = this;
-		if ( Global.IsRunningInVR )
+		if ( Client.IsUsingVr )
 		{
 			// Use a world panel - we're in VR
 			_ = new HBB.VrHudEntity();

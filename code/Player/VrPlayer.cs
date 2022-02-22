@@ -7,6 +7,10 @@ namespace HBB
 		[Net, Local] public LeftHand LeftHand { get; set; }
 		[Net, Local] public RightHand RightHand { get; set; }
 
+		public float Shield {get; set;}
+
+		private TimeSince TimeSinceTookDamage;
+
 		public HBBPlayer()
 		{
 			Inventory = new BaseInventory(this);
@@ -39,12 +43,14 @@ namespace HBB
 				Animator = new VrPlayerAnimator();
 				Camera = new VrCamera();
 			}
-			else 
+			else if (!Client.IsUsingVr)
 			{
 				Controller = new WalkController();
 				Animator = new StandardPlayerAnimator();
 				Camera = new FirstPersonCamera();
 			}
+
+			Shield = 100f;
 
 			Inventory.Add(new NoVrTestWeapon(), true);
 
@@ -88,6 +94,21 @@ namespace HBB
 
 			LeftHand?.FrameSimulate( cl );
 			RightHand?.FrameSimulate( cl );
+		}
+
+		public override void TakeDamage( DamageInfo info )
+		{
+			base.TakeDamage( info );
+
+			TimeSinceTookDamage = 0;
+
+			if (Shield < 100f && TimeSinceTookDamage > 5f) 
+			{
+				for (float i = 0f; i < 100f; i++)
+				{
+					i = Shield;
+				}
+			}
 		}
 
 		public void SetVrAnimProperties()
