@@ -10,7 +10,7 @@ namespace HBB
 	{
 		public VrHudEntity()
 		{
-			SetTemplate( "/Code/UI/ExampleHud.html" );
+			// SetTemplate( "/Code/UI/ExampleHud.html" );
 			SetClass( "is-vr", true );
 		}
 

@@ -18,4 +18,9 @@ partial class NoVrTestWeapon : NoVrBaseWeapon
 
 		ShootBullet(0.25f, 1f, 10f, 0.1f);
 	}
+
+	public override void AttackSecondary()
+	{
+		HBBOwner.Shield -= 1;
+	}
 }

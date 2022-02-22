@@ -1,15 +1,10 @@
 using Sandbox;
-using System;
-// using System.Diagnostics;
-using System.IO;
 using System.Linq;
-using System.Threading.Tasks;
-using System.Collections.Generic;
 
 [Library("grunt", Title = "Grunt", Spawnable = true)]
 partial class Grunt : NpcBase 
 {
-	float Speed;
+	// float Speed;
 
 	[ServerCmd("spawn_grunt")]
 	private static void SpawnEntity() 
@@ -43,27 +38,27 @@ partial class Grunt : NpcBase
 
 		if (Rand.Int(3) == 1) 
 		{
-			this.SetBodyGroup("Backpack", 1);
+			SetBodyGroup("Backpack", 1);
 		}
 
 		if (Rand.Int(3) == 2) 
 		{
-			this.SetBodyGroup("Backpack", 2);
+			SetBodyGroup("Backpack", 2);
 		}
 
 		if (Rand.Int(3) == 1) 
 		{
-			this.SetBodyGroup("Helmet", 1);
+			SetBodyGroup("Helmet", 1);
 		}
 
 		if (Rand.Int(3) == 2) 
 		{
-			this.SetBodyGroup("Helmet", 2);
+			SetBodyGroup("Helmet", 2);
 		}
 
 		Health = 25;
 
-		this.Steer = new Sandbox.Nav.Wander();
+		Steer = new Sandbox.Nav.Wander();
 	}
 
 	public override void TakeDamage( DamageInfo info )

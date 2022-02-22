@@ -19,6 +19,8 @@ partial class NoVrBaseWeapon : BaseWeapon
 
 	public PickupTrigger PickupTrigger {get; protected set;}
 
+	public HBB.HBBPlayer HBBOwner {get; set;}
+
 	public int AvailableAmmo() 
 	{
 		var owner = Owner as HBB.HBBPlayer;
@@ -44,6 +46,8 @@ partial class NoVrBaseWeapon : BaseWeapon
 		PickupTrigger = new PickupTrigger();
 		PickupTrigger.Parent = this;
 		PickupTrigger.Position = Position;
+
+		HBBOwner = Owner as HBB.HBBPlayer;
 	}
 
 	public override void Reload() 

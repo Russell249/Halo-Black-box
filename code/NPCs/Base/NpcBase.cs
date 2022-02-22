@@ -14,7 +14,7 @@ public partial class NpcBase : AnimEntity
 			npc.Delete();
 	}
 
-	float Speed;
+	public float Speed;
 
 	NavPath Path = new NavPath();
 	public NavSteer Steer;
