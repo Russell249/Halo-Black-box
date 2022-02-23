@@ -40,11 +40,11 @@ namespace HBB
 
 		private void Animate()
 		{
-			SetAnimFloat( "Index", InputHand.GetFingerCurl( 1 ) );
-			SetAnimFloat( "Middle", InputHand.GetFingerCurl( 2 ) );
-			SetAnimFloat( "Ring", InputHand.GetFingerCurl( 3 ) );
-			SetAnimFloat("Pinky", InputHand.GetFingerCurl(4));
-			SetAnimFloat( "Thumb", InputHand.GetFingerCurl( 0 ) );
+			SetAnimParameter( "Index", InputHand.GetFingerCurl( 1 ) );
+			SetAnimParameter( "Middle", InputHand.GetFingerCurl( 2 ) );
+			SetAnimParameter( "Ring", InputHand.GetFingerCurl( 3 ) );
+			SetAnimParameter("Pinky", InputHand.GetFingerCurl(4));
+			SetAnimParameter( "Thumb", InputHand.GetFingerCurl( 0 ) );
 		}
 	}
 }

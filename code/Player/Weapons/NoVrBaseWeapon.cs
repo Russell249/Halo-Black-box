@@ -120,7 +120,7 @@ partial class NoVrBaseWeapon : BaseWeapon
 
 			using (Prediction.Off()) 
 			{
-				var damage = DamageInfo.FromBullet(tr.EndPos, Owner.EyeRotation.Forward * 100, 15)
+				var damage = DamageInfo.FromBullet(tr.EndPosition, Owner.EyeRotation.Forward * 100, 15)
 					.UsingTraceResult(tr)
 					.WithAttacker(Owner)
 					.WithWeapon(this);
@@ -145,7 +145,7 @@ partial class NoVrBaseWeapon : BaseWeapon
 
 			using (Prediction.Off()) 
 			{
-				var damageInfo = DamageInfo.FromBullet(tr.EndPos, forward * 100 * force, damage)
+				var damageInfo = DamageInfo.FromBullet(tr.EndPosition, forward * 100 * force, damage)
 					.UsingTraceResult(tr)
 					.WithAttacker(Owner)
 					.WithWeapon(this);

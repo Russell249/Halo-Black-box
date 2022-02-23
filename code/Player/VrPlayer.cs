@@ -41,13 +41,13 @@ namespace HBB
 			{
 				Controller = new VrWalkController();
 				Animator = new VrPlayerAnimator();
-				Camera = new VrCamera();
+				CameraMode = new VrCamera();
 			}
 			else if (!Client.IsUsingVr)
 			{
 				Controller = new WalkController();
 				Animator = new StandardPlayerAnimator();
-				Camera = new FirstPersonCamera();
+				CameraMode = new FirstPersonCamera();
 			}
 
 			Shield = 100f;
@@ -82,7 +82,7 @@ namespace HBB
 			CheckRotate();
 			SetVrAnimProperties();
 
-			// SetAnimVector("")
+			// SetAnimParameterVector("")
 
 			LeftHand?.Simulate( cl );
 			RightHand?.Simulate( cl );
@@ -109,6 +109,15 @@ namespace HBB
 					i = Shield;
 				}
 			}
+
+			if (Shield <= 0) 
+			{
+				Health--;
+			}
+			else 
+			{
+				Shield--;
+			}
 		}
 
 		public void SetVrAnimProperties()
@@ -119,21 +128,21 @@ namespace HBB
 			if ( !Input.VR.IsActive )
 				return;
 
-			SetAnimBool( "b_vr", true );
+			SetAnimParameter( "b_vr", true );
 			var leftHandLocal = Transform.ToLocal( LeftHand.GetBoneTransform( 0 ) );
 			var rightHandLocal = Transform.ToLocal( RightHand.GetBoneTransform( 0 ) );
 
 			var handOffset = Vector3.Zero;
-			SetAnimVector( "left_hand_pos", RightHand.Position);
-			SetAnimVector( "right_hand_pos", RightHand.Position);
-			// SetAnimVector("right_arm_pos", Input.VR.Head.Position);
+			SetAnimParameter( "left_hand_pos", RightHand.Position);
+			SetAnimParameter( "right_hand_pos", RightHand.Position);
+			// SetAnimParameter("right_arm_pos", Input.VR.Head.Position);
 
-			SetAnimRotation( "left_hand_rot", leftHandLocal.Rotation * Rotation.From( 0, 0, 270 ) );
-			SetAnimRotation( "right_hand_rot", rightHandLocal.Rotation );
-			// SetAnimRotation("right_arm_rot", Input.VR.Head.Rotation);
+			SetAnimParameter( "left_hand_rot", leftHandLocal.Rotation * Rotation.From( 0, 0, 270 ) );
+			SetAnimParameter( "right_hand_rot", rightHandLocal.Rotation );
+			// SetAnimParameter("right_arm_rot", Input.VR.Head.Rotation);
 
 			float height = Input.VR.Head.Position.z - Position.z;
-			SetAnimFloat( "duck", 1.0f - ((height - 32f) / 32f) ); // This will probably need tweaking depending on height
+			SetAnimParameter( "duck", 1.0f - ((height - 32f) / 32f) ); // This will probably need tweaking depending on height
 		}
 
 		private TimeSince timeSinceLastRotation;

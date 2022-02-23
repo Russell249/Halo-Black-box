@@ -48,7 +48,7 @@ public class NavSteer
 		var objectRadius = 200.0f;
 		Vector3 avoidance = default;
 
-		foreach (var ent in Physics.GetEntitiesInSphere(center, radius)) 
+		foreach (var ent in BasePhysics.FindInSphere(center, radius)) 
 		{
 			if (ent is not NpcBase) continue;
 			if (ent.IsWorld) continue;

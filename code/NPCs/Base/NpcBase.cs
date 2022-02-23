@@ -64,7 +64,7 @@ public partial class NpcBase : AnimEntity
 		}
 
 		var AngerRange = 250;
-		var overlaps = Physics.GetEntitiesInSphere(Position, AngerRange);
+		var overlaps = BasePhysics.FindInSphere(Position, AngerRange);
 
 		foreach (var overlap in overlaps.OfType<NpcBase>().ToArray()) 
 		{
@@ -220,7 +220,7 @@ public partial class NpcBase : AnimEntity
 
 				if (!tr.StartedSolid) 
 				{
-					move.Position = tr.EndPos;
+					move.Position = tr.EndPosition;
 				}
 
 				if (InputVelocity.Length > 0) 

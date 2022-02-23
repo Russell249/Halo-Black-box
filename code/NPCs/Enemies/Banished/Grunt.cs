@@ -19,7 +19,7 @@ partial class Grunt : NpcBase
 
 			var npc = new Grunt 
 			{
-				Position = tr.EndPos,
+				Position = tr.EndPosition,
 				Rotation = Rotation.LookAt(ply.EyeRotation.Backward.WithZ(0))
 			};
 		}
