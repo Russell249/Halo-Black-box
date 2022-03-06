@@ -6,7 +6,7 @@ using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Sandbox.Debug 
+namespace HBB 
 {
 	public static class Profile 
 	{

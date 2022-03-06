@@ -21,6 +21,6 @@ partial class NoVrTestWeapon : NoVrBaseWeapon
 
 	public override void AttackSecondary()
 	{
-		HBBOwner.Shield -= 1;
+		HBBOwner.Health -= 1;
 	}
 }

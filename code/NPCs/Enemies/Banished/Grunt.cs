@@ -1,129 +1,116 @@
 using Sandbox;
 using System.Linq;
 
-[Library("grunt", Title = "Grunt", Spawnable = true)]
-partial class Grunt : NpcBase 
+namespace HBB 
 {
-	// float Speed;
-
-	[ServerCmd("spawn_grunt")]
-	private static void SpawnEntity() 
+	[Library("grunt", Title = "Grunt", Spawnable = true)]
+	partial class Grunt : NpcBase 
 	{
-		foreach (var ply in Entity.All.OfType<HBB.HBBPlayer>().ToArray()) 
-		{
-			var startPos = ply.EyePosition;
-			var dir = ply.EyeRotation.Forward;
-			var tr = Trace.Ray(startPos, startPos + dir * 5000)
-						.Ignore(ply)
-						.Run();
+		// float Speed;
 
-			var npc = new Grunt 
+		public HBBPlayer TargetPlayer;
+
+		private TimeSince TimeSinceFoundPlayer;
+
+		public float AngerRange = 96;
+
+		[ServerCmd("spawn_grunt")]
+		private static void SpawnEntity() 
+		{
+			foreach (var ply in Entity.All.OfType<HBBPlayer>().ToArray()) 
 			{
-				Position = tr.EndPosition,
-				Rotation = Rotation.LookAt(ply.EyeRotation.Backward.WithZ(0))
-			};
-		}
-	}
+				var startPos = ply.EyePosition;
+				var dir = ply.EyeRotation.Forward;
+				var tr = Trace.Ray(startPos, startPos + dir * 5000)
+							.Ignore(ply)
+							.Run();
 
-	public override void Spawn()
-	{
-		base.Spawn();
-
-		SetModel("models/npc/enemies/banished/grunt/grunt.vmdl");
-		EyePosition = Position + Vector3.Up * 64;
-		CollisionGroup = CollisionGroup.Player;
-		SetupPhysicsFromCapsule(PhysicsMotionType.Keyframed, Capsule.FromHeightAndRadius(48, 5));
-
-		EnableHitboxes = true;
-
-		if (Rand.Int(3) == 1) 
-		{
-			SetBodyGroup("Backpack", 1);
+				var npc = new Grunt 
+				{
+					Position = tr.EndPosition,
+					Rotation = Rotation.LookAt(ply.EyeRotation.Backward.WithZ(0))
+				};
+			}
 		}
 
-		if (Rand.Int(3) == 2) 
+		public override void Spawn()
 		{
-			SetBodyGroup("Backpack", 2);
-		}
+			base.Spawn();
 
-		if (Rand.Int(3) == 1) 
-		{
-			SetBodyGroup("Helmet", 1);
-		}
+			SetModel("models/npc/enemies/banished/grunt/grunt.vmdl");
+			EyePosition = Position + Vector3.Up * 64;
+			CollisionGroup = CollisionGroup.Player;
+			SetupPhysicsFromCapsule(PhysicsMotionType.Keyframed, Capsule.FromHeightAndRadius(48, 5));
 
-		if (Rand.Int(3) == 2) 
-		{
-			SetBodyGroup("Helmet", 2);
-		}
+			EnableHitboxes = true;
 
-		Health = 25;
-
-		Steer = new Sandbox.Nav.Wander();
-	}
-
-	public override void TakeDamage( DamageInfo info )
-	{
-		base.TakeDamage( info );
-
-		CurrentState = State.Scared;
-	}
-
-	public override void OnKilled()
-	{
-		PlaySound("grunt.death");
-
-		base.OnKilled();
-	}
-
-	public override void Tick() 
-	{
-		if (CurrentState == State.Wander) 
-		{
-			if (Rand.Int(200) == 1)
-				PlaySound("grunt.talk");
-		}
-
-		if (CurrentState == State.Chase) 
-		{
-			if (Rand.Int(10) == 1) 
+			if (Rand.Int(3) == 1) 
 			{
-				if (!target.IsValid()) FindTarget();
-				if (target.Health <= 0) FindTarget();
-				Steer = new NavSteer();
-				Steer.Target = target.Position;
+				SetBodyGroup("Backpack", 1);
 			}
 
-			if (TimeUntilAttack <= 0) 
+			if (Rand.Int(3) == 2) 
 			{
-				if (!target.IsValid()) FindTarget();
-				if (target.Health <= 0) FindTarget();
+				SetBodyGroup("Backpack", 2);
+			}
 
-				if (Rand.Int(3) == 1 && Vector3.DistanceBetween(Position, target.Position) < 100) 
+			if (Rand.Int(3) == 1) 
+			{
+				SetBodyGroup("Helmet", 1);
+			}
+
+			if (Rand.Int(3) == 2) 
+			{
+				SetBodyGroup("Helmet", 2);
+			}
+
+			Health = 25;
+
+			Steer = new Wander();
+		}
+
+		public override void TakeDamage( DamageInfo info )
+		{
+			base.TakeDamage( info );
+
+			CurrentState = State.Scared;
+		}
+
+		public override void OnKilled()
+		{
+			PlaySound("grunt.death");
+
+			base.OnKilled();
+		}
+
+		public override void Tick() 
+		{
+			var isPlayerInSphere = FindInSphere(Position, AngerRange);
+
+			foreach (var entity in isPlayerInSphere) 
+			{
+				if (entity is HBBPlayer player) 
 				{
 					Steer = new NavSteer();
-					Steer.Target = target.Position;
-				}
-
-				if (Rand.Int(3) == 1 && Vector3.DistanceBetween(Position, target.Position) < 80) 
-				{
-					// Attack stuff
-					TimeUntilAttack = 60;
+					TargetPlayer = player;
+					TimeSinceFoundPlayer = 0;
+					Speed = 150f;
 				}
 			}
 
-			else 
+			DebugOverlay.Sphere(Position, AngerRange, Color.Red, true);
+
+			if (TimeSinceFoundPlayer >= 50) 
 			{
-				TimeUntilAttack -= 1;
+				TargetPlayer = null;
+				Steer = new Wander();
 			}
+			else if (TimeSinceFoundPlayer < 50)
+			{
+				Steer.Target = TargetPlayer.Position;
+			}
+
+			base.Tick();
 		}
-
-		if (CurrentState == State.Scared) 
-		{
-			Steer = new Sandbox.Nav.Wander();
-
-			Speed = 300f;
-		}
-
-		base.Tick();
 	}
 }

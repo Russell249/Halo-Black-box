@@ -1,32 +1,36 @@
 using Sandbox;
 using Sandbox.UI;
 
-[Library]
-public partial class HBBHud : HudEntity<RootPanel> 
+namespace HBB.UI 
 {
-	public static HBBHud Instance {get; set;}
-
-	public HBBHud() 
+	[Library]
+	public partial class HBBHud : HudEntity<RootPanel> 
 	{
-		Instance = this;
-		if ( Client.IsUsingVr )
+		public static HBBHud Instance {get; set;}
+
+		public HBBHud() 
 		{
-			// Use a world panel - we're in VR
-			_ = new HBB.VrHudEntity();
+			Instance = this;
+			if ( Client.IsUsingVr )
+			{
+				// Use a world panel - we're in VR
+				_ = new HBB.VrHudEntity();
+			}
+			else CreateRootPanel();
 		}
-		else CreateRootPanel();
-	}
 
-	public override void CreateRootPanel()
-	{
-		RootPanel?.Delete();
+		public override void CreateRootPanel()
+		{
+			RootPanel?.Delete();
 
-		base.CreateRootPanel();
-		CreateHUDElements();
-	}
+			base.CreateRootPanel();
+			CreateHUDElements();
+		}
 
-	public void CreateHUDElements() 
-	{
-		// RootPanel.AddChild<HealthBar>();
+		public void CreateHUDElements() 
+		{
+			// RootPanel.AddChild<HealthBar>();
+			RootPanel.AddChild<ShieldShower>();
+		}
 	}
 }

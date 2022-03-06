@@ -1,4 +1,6 @@
-namespace Sandbox.Nav 
+using Sandbox;
+
+namespace HBB 
 {
 	public class Wander : NavSteer 
 	{

@@ -14,7 +14,7 @@
 ]
 
 //
-// NpcBase
+// HBB.NpcBase
 //
 @PointClass base(BaseProperties_hbb_blackbox) = npc_base : ""
 [
@@ -24,7 +24,7 @@
 ]
 
 //
-// Grunt
+// HBB.Grunt
 //
 @PointClass base(BaseProperties_hbb_blackbox) = grunt : ""
 [

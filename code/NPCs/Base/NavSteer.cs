@@ -2,72 +2,77 @@ using Sandbox;
 using System;
 using System.Buffers;
 
-public class NavSteer 
+namespace HBB 
 {
-	protected NavPath Path {get; private set;}
-
-	public Vector3 Target {get; set;}
-	public NavSteerOutput Output;
-
-	public NavSteer() 
+	public class NavSteer 
 	{
-		Path = new NavPath();
-	}
+		protected NavPath Path {get; private set;}
 
-	public virtual void Tick(Vector3 currentPosition) 
-	{
-		using (Sandbox.Debug.Profile.Scope("Update Path")) 
+		public Vector3 Target {get; set;}
+		public NavSteerOutput Output;
+
+		public NavSteer() 
 		{
-			Path.Update(currentPosition, Target);
+			Path = new NavPath();
 		}
 
-		Output.Finished = Path.IsEmpty;
-
-		if (Output.Finished) 
+		public virtual void Tick(Vector3 currentPosition) 
 		{
-			Output.Direction = Vector3.Zero;
-			return;
+			using (Profile.Scope("Update Path")) 
+			{
+				Path.Update(currentPosition, Target);
+			}
+
+			Output.Finished = Path.IsEmpty;
+
+			if (Output.Finished) 
+			{
+				Output.Direction = Vector3.Zero;
+				return;
+			}
+
+			using (Profile.Scope("Update Direction")) 
+			{
+				Output.Direction = Path.GetDirection(currentPosition);
+			}
+
+			var avoid = GetAvoidance(currentPosition, 500);
+			if (avoid.IsNearlyZero()) 
+			{
+				Output.Direction = (Output.Direction + avoid).Normal;
+			}
 		}
 
-		using (Sandbox.Debug.Profile.Scope("Update Direction")) 
+		Vector3 GetAvoidance(Vector3 position, float radius)
 		{
-			Output.Direction = Path.GetDirection(currentPosition);
+			var center = position + Output.Direction * radius * 0.5f;
+
+			var objectRadius = 200.0f;
+			Vector3 avoidance = default;
+
+			var findInSphere = Entity.FindInSphere(center, radius);
+
+			foreach (var ent in findInSphere) 
+			{
+				if (ent is not NpcBase) continue;
+				if (ent.IsWorld) continue;
+
+				var delta = (position - ent.Position).WithZ(0);
+				var closeness = delta.Length;
+				if (closeness < 0.001f) continue;
+				var thrust = ((objectRadius - closeness) / objectRadius).Clamp(0, 1);
+				if (thrust <= 0) continue;
+
+				avoidance += delta.Normal * thrust * thrust;
+			}
+
+			return avoidance;
 		}
 
-		var avoid = GetAvoidance(currentPosition, 500);
-		if (avoid.IsNearlyZero()) 
+		public struct NavSteerOutput 
 		{
-			Output.Direction = (Output.Direction + avoid).Normal;
+			public bool Finished;
+			public Vector3 Direction;
 		}
-	}
-
-	Vector3 GetAvoidance(Vector3 position, float radius)
-	{
-		var center = position + Output.Direction * radius * 0.5f;
-
-		var objectRadius = 200.0f;
-		Vector3 avoidance = default;
-
-		foreach (var ent in BasePhysics.FindInSphere(center, radius)) 
-		{
-			if (ent is not NpcBase) continue;
-			if (ent.IsWorld) continue;
-
-			var delta = (position - ent.Position).WithZ(0);
-			var closeness = delta.Length;
-			if (closeness < 0.001f) continue;
-			var thrust = ((objectRadius - closeness) / objectRadius).Clamp(0, 1);
-			if (thrust <= 0) continue;
-
-			avoidance += delta.Normal * thrust * thrust;
-		}
-
-		return avoidance;
-	}
-
-	public struct NavSteerOutput 
-	{
-		public bool Finished;
-		public Vector3 Direction;
 	}
 }

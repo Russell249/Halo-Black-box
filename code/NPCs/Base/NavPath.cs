@@ -1,69 +1,72 @@
 using Sandbox;
 using System.Collections.Generic;
 
-public class NavPath 
+namespace HBB 
 {
-	public Vector3 TargetPosition;
-	public List<Vector3> Points = new List<Vector3>();
-
-	public bool IsEmpty => Points.Count <= 1;
-
-	public void Update(Vector3 from, Vector3 to) 
+	public class NavPath 
 	{
-		bool needsBuild = false;
+		public Vector3 TargetPosition;
+		public List<Vector3> Points = new List<Vector3>();
 
-		if (!TargetPosition.IsNearlyEqual(to, 5)) 
+		public bool IsEmpty => Points.Count <= 1;
+
+		public void Update(Vector3 from, Vector3 to) 
 		{
-			TargetPosition = to;
-			needsBuild = true;
+			bool needsBuild = false;
+
+			if (!TargetPosition.IsNearlyEqual(to, 5)) 
+			{
+				TargetPosition = to;
+				needsBuild = true;
+			}
+
+			if (needsBuild) 
+			{
+				var from_fixed = NavMesh.GetClosestPoint(from);
+				var tofixed = NavMesh.GetClosestPoint(to);
+
+				Points.Clear();
+				NavMesh.GetClosestPoint(from);
+				NavMesh.BuildPath(from_fixed.Value, tofixed.Value, Points);
+			}
+
+			if (Points.Count <= 1) 
+			{
+				return;
+			}
+
+			var deltaToCurrent = from - Points[0];
+			var deltaToNext = from - Points[1];
+			var delta = Points[1] - Points[0];
+			var deltaNormal = delta.Normal;
+
+			if (deltaToNext.WithZ(0).Length < 20)
+			{
+				Points.RemoveAt(0);
+				return;
+			}
+
+			if (deltaToNext.Normal.Dot(deltaNormal) >= 1.0f) 
+			{
+				Points.RemoveAt(0);
+			}
 		}
 
-		if (needsBuild) 
+		public float Distance(int point, Vector3 from) 
 		{
-			var from_fixed = NavMesh.GetClosestPoint(from);
-			var tofixed = NavMesh.GetClosestPoint(to);
+			if (Points.Count <= point) return float.MaxValue;
 
-			Points.Clear();
-			NavMesh.GetClosestPoint(from);
-			NavMesh.BuildPath(from_fixed.Value, tofixed.Value, Points);
+			return Points[point].WithZ(from.z).Distance(from);
 		}
 
-		if (Points.Count <= 1) 
+		public Vector3 GetDirection(Vector3 position) 
 		{
-			return;
+			if (Points.Count == 1) 
+			{
+				return (Points[0]- position).WithZ(0).Normal;
+			}
+
+			return (Points[1] - position).WithZ(0).Normal;
 		}
-
-		var deltaToCurrent = from - Points[0];
-		var deltaToNext = from - Points[1];
-		var delta = Points[1] - Points[0];
-		var deltaNormal = delta.Normal;
-
-		if (deltaToNext.WithZ(0).Length < 20)
-		{
-			Points.RemoveAt(0);
-			return;
-		}
-
-		if (deltaToNext.Normal.Dot(deltaNormal) >= 1.0f) 
-		{
-			Points.RemoveAt(0);
-		}
-	}
-
-	public float Distance(int point, Vector3 from) 
-	{
-		if (Points.Count <= point) return float.MaxValue;
-
-		return Points[point].WithZ(from.z).Distance(from);
-	}
-
-	public Vector3 GetDirection(Vector3 position) 
-	{
-		if (Points.Count == 1) 
-		{
-			return (Points[0]- position).WithZ(0).Normal;
-		}
-
-		return (Points[1] - position).WithZ(0).Normal;
 	}
 }

@@ -7,8 +7,6 @@ namespace HBB
 		[Net, Local] public LeftHand LeftHand { get; set; }
 		[Net, Local] public RightHand RightHand { get; set; }
 
-		public float Shield {get; set;}
-
 		private TimeSince TimeSinceTookDamage;
 
 		public HBBPlayer()
@@ -50,7 +48,7 @@ namespace HBB
 				CameraMode = new FirstPersonCamera();
 			}
 
-			Shield = 100f;
+			Health = 200f;
 
 			Inventory.Add(new NoVrTestWeapon(), true);
 
@@ -102,21 +100,12 @@ namespace HBB
 
 			TimeSinceTookDamage = 0;
 
-			if (Shield < 100f && TimeSinceTookDamage > 5f) 
+			if (Health <= 100f && TimeSinceTookDamage > 5f) 
 			{
-				for (float i = 0f; i < 100f; i++)
+				for (float i = 0f; i < 200f; i++)
 				{
-					i = Shield;
+					i = Health;
 				}
-			}
-
-			if (Shield <= 0) 
-			{
-				Health--;
-			}
-			else 
-			{
-				Shield--;
 			}
 		}
 

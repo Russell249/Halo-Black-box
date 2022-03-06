@@ -1,68 +1,72 @@
 using Sandbox;
 using System.Linq;
-partial class NpcBase 
+
+namespace HBB 
 {
-	static EntityLimit RagdollLimit = new EntityLimit {MaxTotal = 20};
-
-	[ClientRpc]
-	public void BecomeRagdollOnClient(Vector3 velocity, DamageFlags damageFlags, Vector3 forcePos, Vector3 force, int bone) 
+	partial class NpcBase 
 	{
-		var ent = new ModelEntity();
-		ent.Position = Position;
-		ent.Rotation = Rotation;
-		ent.Scale = Scale;
-		ent.MoveType = MoveType.Physics;
-		ent.CopyBodyGroups(this);
-		// ent.CopyBonesFrom(this);
-		ent.CopyMaterialGroup(this);
-		ent.TakeDecalsFrom(this);
-		ent.UsePhysicsCollision = true;
-		ent.EnableAllCollisions = true;
-		ent.SurroundingBoundsMode = SurroundingBoundsType.Physics;
-		ent.RenderColor = RenderColor;
-		// ent.PhysicsGroup.Velocity = velocity;
-		ent.SetInteractsAs( CollisionLayer.Debris );
-		ent.SetInteractsWith( CollisionLayer.WORLD_GEOMETRY );
-		ent.SetInteractsExclude( CollisionLayer.Player | CollisionLayer.Debris );
+		static EntityLimit RagdollLimit = new EntityLimit {MaxTotal = 20};
 
-		if (damageFlags.HasFlag(DamageFlags.Bullet) || damageFlags.HasFlag(DamageFlags.PhysicsImpact)) 
+		[ClientRpc]
+		public void BecomeRagdollOnClient(Vector3 velocity, DamageFlags damageFlags, Vector3 forcePos, Vector3 force, int bone) 
 		{
-			PhysicsBody body = bone > 0 ? ent.GetBonePhysicsBody(bone) : null;
+			var ent = new ModelEntity();
+			ent.Position = Position;
+			ent.Rotation = Rotation;
+			ent.Scale = Scale;
+			ent.MoveType = MoveType.Physics;
+			ent.CopyBodyGroups(this);
+			// ent.CopyBonesFrom(this);
+			ent.CopyMaterialGroup(this);
+			ent.TakeDecalsFrom(this);
+			ent.UsePhysicsCollision = true;
+			ent.EnableAllCollisions = true;
+			ent.SurroundingBoundsMode = SurroundingBoundsType.Physics;
+			ent.RenderColor = RenderColor;
+			// ent.PhysicsGroup.Velocity = velocity;
+			ent.SetInteractsAs( CollisionLayer.Debris );
+			ent.SetInteractsWith( CollisionLayer.WORLD_GEOMETRY );
+			ent.SetInteractsExclude( CollisionLayer.Player | CollisionLayer.Debris );
 
-			if (body != null) 
+			if (damageFlags.HasFlag(DamageFlags.Bullet) || damageFlags.HasFlag(DamageFlags.PhysicsImpact)) 
 			{
-				body.ApplyImpulseAt(forcePos, force * body.Mass);
+				PhysicsBody body = bone > 0 ? ent.GetBonePhysicsBody(bone) : null;
+
+				if (body != null) 
+				{
+					body.ApplyImpulseAt(forcePos, force * body.Mass);
+				}
+				else 
+				{
+					ent.PhysicsGroup.ApplyImpulse(force);
+				}
 			}
-			else 
+			
+			if (damageFlags.HasFlag(DamageFlags.Blast)) 
 			{
-				ent.PhysicsGroup.ApplyImpulse(force);
+				if (ent.PhysicsGroup != null) 
+				{
+					ent.PhysicsGroup.AddVelocity((Position - (forcePos + Vector3.Down * 100.0f)).Normal * (force.Length * 0.2f));
+					var angularDir = (Rotation.FromYaw(90) * force.WithZ(0).Normal).Normal;
+					ent.PhysicsGroup.AddAngularVelocity(angularDir * (force.Length * 0.02f));
+				}
 			}
-		}
-		
-		if (damageFlags.HasFlag(DamageFlags.Blast)) 
-		{
-			if (ent.PhysicsGroup != null) 
+
+			ent.SetModel( GetModelName() );
+			ent.CopyBonesFrom( this );
+			ent.TakeDecalsFrom( this );
+			ent.SetRagdollVelocityFrom( this );
+			// ent.DeleteAsync( 20.0f );
+
+			ent.RenderColor = RenderColor;
+
+			foreach (var ply in Entity.All.OfType<Player>()) 
 			{
-				ent.PhysicsGroup.AddVelocity((Position - (forcePos + Vector3.Down * 100.0f)).Normal * (force.Length * 0.2f));
-				var angularDir = (Rotation.FromYaw(90) * force.WithZ(0).Normal).Normal;
-				ent.PhysicsGroup.AddAngularVelocity(angularDir * (force.Length * 0.02f));
+				if (Vector3.DistanceBetween(ply.Position, Position) > 4500)
+					ent.Delete();
 			}
+
+			// RagdollLimit.Watch(ent);
 		}
-
-		ent.SetModel( GetModelName() );
-		ent.CopyBonesFrom( this );
-		ent.TakeDecalsFrom( this );
-		ent.SetRagdollVelocityFrom( this );
-		// ent.DeleteAsync( 20.0f );
-
-		ent.RenderColor = RenderColor;
-
-		foreach (var ply in Entity.All.OfType<Player>()) 
-		{
-			if (Vector3.DistanceBetween(ply.Position, Position) > 4500)
-				ent.Delete();
-		}
-
-		// RagdollLimit.Watch(ent);
 	}
 }

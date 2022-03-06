@@ -1,4 +1,5 @@
 ﻿using Sandbox;
+using HBB.UI;
 
 namespace HBB
 {
