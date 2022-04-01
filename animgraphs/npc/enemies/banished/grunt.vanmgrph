@@ -899,6 +899,28 @@
 		{
 			key = 
 			{
+				m_id = 432588457
+			}
+			value = 
+			{
+				_class = "CSequenceAnimNode"
+				m_sName = "Unnamed"
+				m_vecPosition = [ -32.0, 112.0 ]
+				m_nNodeID = 
+				{
+					m_id = 432588457
+				}
+				m_networkMode = "ServerAuthoritative"
+				m_sNote = ""
+				m_tagSpans = [  ]
+				m_sequenceName = "air"
+				m_playbackSpeed = 1.0
+				m_bLoop = true
+			}
+		},
+		{
+			key = 
+			{
 				m_id = 451168006
 			}
 			value = 
@@ -942,7 +964,22 @@
 						[
 							{
 								_class = "CAnimStateTransition"
-								m_conditions = [  ]
+								m_conditions = 
+								[
+									{
+										_class = "CParameterAnimCondition"
+										m_comparisonOp = 0
+										m_paramID = 
+										{
+											m_id = 529523107
+										}
+										m_comparisonValue = 
+										{
+											m_nType = 1
+											m_data = true
+										}
+									},
+								]
 								m_blendDuration = 0.2
 								m_destState = 
 								{
@@ -961,7 +998,22 @@
 							},
 							{
 								_class = "CAnimStateTransition"
-								m_conditions = [  ]
+								m_conditions = 
+								[
+									{
+										_class = "CParameterAnimCondition"
+										m_comparisonOp = 0
+										m_paramID = 
+										{
+											m_id = 2083292779
+										}
+										m_comparisonValue = 
+										{
+											m_nType = 1
+											m_data = false
+										}
+									},
+								]
 								m_blendDuration = 0.2
 								m_destState = 
 								{
@@ -1003,7 +1055,35 @@
 						[
 							{
 								_class = "CAnimStateTransition"
-								m_conditions = [  ]
+								m_conditions = 
+								[
+									{
+										_class = "CParameterAnimCondition"
+										m_comparisonOp = 0
+										m_paramID = 
+										{
+											m_id = 2083292779
+										}
+										m_comparisonValue = 
+										{
+											m_nType = 1
+											m_data = true
+										}
+									},
+									{
+										_class = "CParameterAnimCondition"
+										m_comparisonOp = 0
+										m_paramID = 
+										{
+											m_id = 529523107
+										}
+										m_comparisonValue = 
+										{
+											m_nType = 1
+											m_data = false
+										}
+									},
+								]
 								m_blendDuration = 0.2
 								m_destState = 
 								{
@@ -1022,7 +1102,22 @@
 							},
 							{
 								_class = "CAnimStateTransition"
-								m_conditions = [  ]
+								m_conditions = 
+								[
+									{
+										_class = "CParameterAnimCondition"
+										m_comparisonOp = 0
+										m_paramID = 
+										{
+											m_id = 2083292779
+										}
+										m_comparisonValue = 
+										{
+											m_nType = 1
+											m_data = false
+										}
+									},
+								]
 								m_blendDuration = 0.2
 								m_destState = 
 								{
@@ -1051,7 +1146,7 @@
 						{
 							m_id = 732224943
 						}
-						m_position = [ -176.0, -128.0 ]
+						m_position = [ -176.0, -160.0 ]
 						m_bIsStartState = false
 						m_bIsEndtState = false
 						m_bIsPassthrough = false
@@ -1064,7 +1159,22 @@
 						[
 							{
 								_class = "CAnimStateTransition"
-								m_conditions = [  ]
+								m_conditions = 
+								[
+									{
+										_class = "CParameterAnimCondition"
+										m_comparisonOp = 0
+										m_paramID = 
+										{
+											m_id = 2083292779
+										}
+										m_comparisonValue = 
+										{
+											m_nType = 1
+											m_data = true
+										}
+									},
+								]
 								m_blendDuration = 0.2
 								m_destState = 
 								{
@@ -1087,7 +1197,7 @@
 						m_name = "In Air"
 						m_childNodeID = 
 						{
-							m_id = 4294967295
+							m_id = 432588457
 						}
 						m_stateID = 
 						{
@@ -1106,7 +1216,15 @@
 						[
 							{
 								_class = "CAnimStateTransition"
-								m_conditions = [  ]
+								m_conditions = 
+								[
+									{
+										_class = "CFinishedCondition"
+										m_comparisonOp = 0
+										m_option = "FinishedConditionOption_OnFinished"
+										m_bIsFinished = true
+									},
+								]
 								m_blendDuration = 0.2
 								m_destState = 
 								{
@@ -1125,7 +1243,22 @@
 							},
 							{
 								_class = "CAnimStateTransition"
-								m_conditions = [  ]
+								m_conditions = 
+								[
+									{
+										_class = "CParameterAnimCondition"
+										m_comparisonOp = 0
+										m_paramID = 
+										{
+											m_id = 529523107
+										}
+										m_comparisonValue = 
+										{
+											m_nType = 1
+											m_data = true
+										}
+									},
+								]
 								m_blendDuration = 0.2
 								m_destState = 
 								{
@@ -1144,7 +1277,22 @@
 							},
 							{
 								_class = "CAnimStateTransition"
-								m_conditions = [  ]
+								m_conditions = 
+								[
+									{
+										_class = "CParameterAnimCondition"
+										m_comparisonOp = 0
+										m_paramID = 
+										{
+											m_id = 2083292779
+										}
+										m_comparisonValue = 
+										{
+											m_nType = 1
+											m_data = false
+										}
+									},
+								]
 								m_blendDuration = 0.2
 								m_destState = 
 								{
@@ -1173,7 +1321,7 @@
 						{
 							m_id = 2019566080
 						}
-						m_position = [ 64.0, -48.0 ]
+						m_position = [ 32.0, -64.0 ]
 						m_bIsStartState = false
 						m_bIsEndtState = false
 						m_bIsPassthrough = false
@@ -1194,7 +1342,7 @@
 			{
 				_class = "CSequenceAnimNode"
 				m_sName = "Unnamed"
-				m_vecPosition = [ -32.0, -64.0 ]
+				m_vecPosition = [ -32.0, -32.0 ]
 				m_nNodeID = 
 				{
 					m_id = 491334036
@@ -1202,7 +1350,7 @@
 				m_networkMode = "ServerAuthoritative"
 				m_sNote = ""
 				m_tagSpans = [  ]
-				m_sequenceName = "jump_ar2"
+				m_sequenceName = "jump"
 				m_playbackSpeed = 1.0
 				m_bLoop = false
 			}
