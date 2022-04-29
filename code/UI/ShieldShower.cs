@@ -12,7 +12,7 @@ namespace HBB.UI
 		{
 			StyleSheet.Load("/ui/ShieldShower.scss");
 			Panel shieldBackground = Add.Panel();
-			shieldBackground.Add.Label("Shield", "ShieldTextName");
+			shieldBackground.Add.Label("Shield ", "ShieldTextName");
 			ShieldText = Add.Label("100", "ShieldText");
 		}
 
@@ -27,7 +27,7 @@ namespace HBB.UI
 				return;
 
 			RemoveClass("Hidden");
-			ShieldText.Text = player.Health.CeilToInt().ToString();
+			ShieldText.Text = player.Shield.CeilToInt().ToString();
 
 			if (player.Health.CeilToInt() < 100)
 				Style.FontColor = "#FF0000";

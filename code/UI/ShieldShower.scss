@@ -1,9 +1,5 @@
 Shield {
     position: absolute;
-    left: 25px;
-    bottom: 27px;
-    width: 229px;
-    height: 81px;
     background-color: rgba(0, 0, 0, 0.3);
     border-radius: 7px;
 
@@ -22,7 +18,11 @@ Shield {
         bottom: 15px;
         font-family: Poppins;
         font-size: 16.5px;
-        font-weight: 700;
+        font-weight: 700;    
+        left: 25px;
+        bottom: 27px;
+        width: 229px;
+        height: 81px;
         color: yellow;
     }
 }
