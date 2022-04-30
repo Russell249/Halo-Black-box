@@ -11,6 +11,8 @@ namespace HBB
 
 		private TimeSince TimeSinceTookDamage;
 
+		private TimeSince TimeSinceDied;
+
 		public HBBPlayer()
 		{
 			Inventory = new BaseInventory(this);
@@ -51,6 +53,8 @@ namespace HBB
 			}
 
 			Shield = 100;
+
+			Health = 100;
 
 			Inventory.Add(new NoVrTestWeapon(), true);
 
@@ -100,32 +104,45 @@ namespace HBB
 		{
 			base.TakeDamage( info );
 
-			if (IsServer && Shield > 0) 
+			var ShieldIsBroken = Shield == 0;
+
+			TimeSinceTookDamage = 0;
+
+			if (/*Shield > 0 &&*/ !ShieldIsBroken) 
 			{
 				Shield -= info.Damage;
 
-				if (Shield < 0) 
+				Log.Info("Took Shield Damage!");
+
+				if (ShieldIsBroken) 
 				{
 					info.Damage = Shield * -1;
 					Shield = 0;
+
+					Log.Info("Shield is now broken!");
 				}
-				else 
-				{
-					info.Damage = 0;
-				}
+				// else 
+				// {
+				// 	info.Damage = 0;
+				// }
 
 				if (TimeSinceTookDamage >= 15f && Shield < 100) 
 				{
 					for (float i = 0f; i < 100; i++) 
 					{
 						i = Shield;
+
+						Log.Info("Regenerating Shield, CurrShield: " + Shield);
 					}
 				}
 			}
 
-			if (Health > 0 && info.Damage > 0) 
+			if (Health > 0 /*&& info.Damage > 0*/ && ShieldIsBroken) 
 			{
 				Health -= info.Damage;
+
+				Log.Info("Took Health Damage!");
+
 				if (Health <= 0) 
 				{
 					Health = 0;
@@ -203,6 +220,11 @@ namespace HBB
 		{
 			base.OnKilled();
 			EnableDrawing = false;
+
+			TimeSinceDied = 0;
+
+			if (TimeSinceDied >= 15f)
+				Respawn();
 			DeleteHands();
 		}
 	}

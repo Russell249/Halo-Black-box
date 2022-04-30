@@ -18,6 +18,7 @@
     ],
     "GameNetworkType": 1,
     "MinPlayers": 1,
-    "MaxPlayers": 1
+    "MaxPlayers": 1,
+    "MapSelect": 3
   }
 }

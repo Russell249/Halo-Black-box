@@ -29,7 +29,7 @@ namespace HBB.UI
 			RemoveClass("Hidden");
 			ShieldText.Text = player.Shield.CeilToInt().ToString();
 
-			if (player.Health.CeilToInt() < 100)
+			if (player.Shield.CeilToInt() < 100)
 				Style.FontColor = "#FF0000";
 		}
 	}

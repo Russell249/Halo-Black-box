@@ -29,9 +29,14 @@ namespace HBB
 			if (player.LifeState != LifeState.Alive)
 				return;
 
-			var daminfo = DamageInfo.FromBullet(Vector3.Zero, Vector3.Zero, 1);
+			var daminfo = DamageInfo.FromBullet(Vector3.Zero, Vector3.Zero, 15)
+				.WithWeapon(this);
 
 			player.TakeDamage(daminfo);
+
+			Log.Info("Damage Taken: " + daminfo.Damage);
+			Log.Info("Player Shield: " + player.Shield);
+			Log.Info("Player Health: " + player.Health);
 		}
 	}
 }
