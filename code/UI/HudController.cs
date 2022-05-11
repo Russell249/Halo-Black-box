@@ -14,7 +14,7 @@ namespace HBB.UI
 			if ( Client.IsUsingVr )
 			{
 				// Use a world panel - we're in VR
-				_ = new HBB.VrHudEntity();
+				_ = new VrHudEntity();
 			}
 			else CreateRootPanel();
 		}

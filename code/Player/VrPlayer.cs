@@ -108,7 +108,7 @@ namespace HBB
 
 			TimeSinceTookDamage = 0;
 
-			if (/*Shield > 0 &&*/ !ShieldIsBroken) 
+			if (Shield > 0 && !ShieldIsBroken) 
 			{
 				Shield -= info.Damage;
 
