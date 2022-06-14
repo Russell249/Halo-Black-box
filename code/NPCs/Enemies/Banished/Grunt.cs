@@ -3,7 +3,7 @@ using System.Linq;
 
 namespace HBB 
 {
-	[Library("grunt", Title = "Grunt", Spawnable = true)]
+	[Library("grunt", Title = "Grunt")]
 	partial class Grunt : NpcBase 
 	{
 		// float Speed;
@@ -14,7 +14,7 @@ namespace HBB
 
 		public float AngerRange = 96;
 
-		[ServerCmd("spawn_grunt")]
+		[ConCmd.Client("spawn_grunt")]
 		private static void SpawnEntity() 
 		{
 			foreach (var ply in Entity.All.OfType<HBBPlayer>().ToArray()) 
@@ -98,7 +98,7 @@ namespace HBB
 				}
 			}
 
-			DebugOverlay.Sphere(Position, AngerRange, Color.Red, true);
+			DebugOverlay.Sphere(Position, AngerRange, Color.Red, 0, true);
 
 			if (TimeSinceFoundPlayer >= 50) 
 			{

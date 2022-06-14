@@ -3,11 +3,11 @@ using System;
 
 public struct AnimationHelper
 {
-	AnimEntity Owner;
+	AnimatedEntity Owner;
 
 	TimeSince TimeSinceStopped = 0;
 
-	public AnimationHelper(AnimEntity entity) 
+	public AnimationHelper(AnimatedEntity entity) 
 	{
 		Owner = entity;
 	}

@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace HBB 
 {
-	[Library("npc_base", Title = "Base NPC", Spawnable = false)]
-	public partial class NpcBase : AnimEntity 
+	[Library("npc_base", Title = "Base NPC")]
+	public partial class NpcBase : AnimatedEntity 
 	{
-		[ServerCmd("npc_clear")]
+		[ConCmd.Server("npc_clear")]
 		public static void NpcClear() 
 		{
-			foreach (var npc in Entity.All.OfType<NpcBase>().ToArray())
+			foreach (var npc in All.OfType<NpcBase>().ToArray())
 				npc.Delete();
 		}
 

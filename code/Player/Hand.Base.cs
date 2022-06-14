@@ -2,7 +2,7 @@
 
 namespace HBB
 {
-	public partial class BaseHand : AnimEntity
+	public partial class BaseHand : AnimatedEntity
 	{
 		[Net] public BaseHand Other { get; set; }
 
