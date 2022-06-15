@@ -200,7 +200,7 @@ namespace HBB
 				// DebugOverlay.ScreenText( lineOffset + 1, $"        Velocity: {Velocity}" );
 				// DebugOverlay.ScreenText( lineOffset + 2, $"    BaseVelocity: {BaseVelocity}" );
 				// DebugOverlay.ScreenText( lineOffset + 3,
-				// 	$"    GroundEntity: {GroundEntity} [{GroundEntity?.Velocity}]" );
+					// $"    GroundEntity: {GroundEntity} [{GroundEntity?.Velocity}]" );
 				// DebugOverlay.ScreenText( lineOffset + 4, $" SurfaceFriction: {SurfaceFriction}" );
 				// DebugOverlay.ScreenText( lineOffset + 5, $"    WishVelocity: {WishVelocity}" );
 			}

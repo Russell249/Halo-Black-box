@@ -81,7 +81,7 @@ partial class NoVrBaseWeapon : BaseWeapon
 			base.Simulate(owner);
 		}
 
-		if (Input.Pressed(InputButton.Attack1)) 
+		if (Input.Pressed(InputButton.PrimaryAttack)) 
 		{
 			AttackPrimary();
 		}
