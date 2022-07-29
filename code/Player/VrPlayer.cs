@@ -90,6 +90,8 @@ namespace HBB
 
 			LeftHand?.Simulate( cl );
 			RightHand?.Simulate( cl );
+
+			// if (Input.VR.LeftHand.)
 		}
 
 		public override void FrameSimulate( Client cl )

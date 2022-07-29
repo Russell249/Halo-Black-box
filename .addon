@@ -16,12 +16,12 @@
     "MapList": [
       "facepunch.construct"
     ],
-    "GameNetworkType": 1,
+    "GameNetworkType": "Singleplayer",
     "MinPlayers": 1,
     "MaxPlayers": 1,
-    "MapSelect": 3,
+    "MapSelect": "Official",
     "PerMapRanking": false,
-    "LeaderboardType": 0,
-    "RankType": 0
+    "LeaderboardType": "None",
+    "RankType": "None"
   }
 }
